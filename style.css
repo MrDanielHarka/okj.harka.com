@@ -1,0 +1,32 @@
+html {
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+}
+
+body {
+  color: #222;
+  margin: 10px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 17px;
+  padding: 0 10px;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: green;
+}
+
+a:active {
+  color: greenyellow;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #fff;
+  }
+}

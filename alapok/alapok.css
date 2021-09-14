@@ -1,0 +1,20 @@
+html {
+  text-align: center;
+}
+
+h1 {
+  color: greenyellow;
+  padding-top: 10%;
+}
+
+p {
+  color: #fff;
+}
+
+body {
+  background-color: #121212;
+}
+
+span {
+  font-size: 50px;
+}
