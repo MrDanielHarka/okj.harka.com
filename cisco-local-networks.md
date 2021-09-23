@@ -1,4 +1,4 @@
-# 09.20. CISCO Local Networks & Others
+# CISCO Local Networks & Others (2021.09.20.)
 
 Alapvizsgára nem kell tudni:
 
