@@ -11,8 +11,121 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="style.css" />
     <title>Szivárvány | okj.harka.com</title>
+    <style>
+      img {
+        padding: 10px;
+      }
+
+      .red {
+        color: red;
+      }
+
+      .orange {
+        color: orange;
+      }
+
+      .yellow {
+        color: yellow;
+      }
+
+      .green {
+        color: green;
+      }
+
+      .blue {
+        color: blue;
+      }
+
+      .indigo {
+        color: indigo;
+      }
+
+      .plum {
+        color: plum;
+      }
+
+      p {
+        text-align: justify;
+      }
+      .wrapper {
+        height: 100%;
+        width: 98%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background: linear-gradient(
+          124deg,
+          #ff2400,
+          #e81d1d,
+          #e8b71d,
+          #e3e81d,
+          #1de840,
+          #1ddde8,
+          #2b1de8,
+          #dd00f3,
+          #dd00f3
+        );
+        background-size: 1800% 1800%;
+
+        -webkit-animation: rainbow 18s ease infinite;
+        -z-animation: rainbow 18s ease infinite;
+        -o-animation: rainbow 18s ease infinite;
+        animation: rainbow 18s ease infinite;
+      }
+
+      @-webkit-keyframes rainbow {
+        0% {
+          background-position: 0% 82%;
+        }
+        50% {
+          background-position: 100% 19%;
+        }
+        100% {
+          background-position: 0% 82%;
+        }
+      }
+      @-moz-keyframes rainbow {
+        0% {
+          background-position: 0% 82%;
+        }
+        50% {
+          background-position: 100% 19%;
+        }
+        100% {
+          background-position: 0% 82%;
+        }
+      }
+      @-o-keyframes rainbow {
+        0% {
+          background-position: 0% 82%;
+        }
+        50% {
+          background-position: 100% 19%;
+        }
+        100% {
+          background-position: 0% 82%;
+        }
+      }
+      @keyframes rainbow {
+        0% {
+          background-position: 0% 82%;
+        }
+        50% {
+          background-position: 100% 19%;
+        }
+        100% {
+          background-position: 0% 82%;
+        }
+      }
+
+      body {
+        background-color: rgba(255, 255, 255, 0.5);
+        font-family: 'Gluten', cursive;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -127,7 +240,19 @@
         az eredményt. Az erős napfény az üvegen fog visszaverődni és a falra
         rajzolja neked a szivárványhoz hasonlatos színvarázst.
       </p>
-      <br />
     </section>
+    <footer>
+      <br />
+      <hr noshade />
+      <p>
+        Forráskód:
+        <a
+          href="https://github.com/MrDanielHarka/okj.harka.com/blob/main/szivarvany"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >GitHub</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
