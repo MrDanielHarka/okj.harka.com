@@ -30,3 +30,8 @@ a:active {
     color: #fff;
   }
 }
+
+.bold,
+div label {
+  font-weight: bold;
+}
