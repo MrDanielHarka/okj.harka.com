@@ -85,7 +85,10 @@ Ha ez már megvan, akkor ugorj a következő alcímhez!
 
 ![Reg](githubreg.jpg)
 
-7. Katt a `Start puzzle`-re. 8. Katt a legvilágosabb 3, 4 vagy 5 ágú, spirálos képre. 9. Katt a `Create account`-ra. 10. Nézd meg a mailed és Ctr+V-zd vagy írd be a kapott számot.
+7. Katt a `Start puzzle`-re.
+8. Katt a legvilágosabb 3, 4 vagy 5 ágú, spirálos képre.
+9. Katt a `Create account`-ra.
+10. Nézd meg a mailed és Ctr+V-zd vagy írd be a kapott számot.
 
 ## 2. Feltöltendő honlap elkészítése
 
@@ -147,7 +150,7 @@ Ha az előző pontokat helyesen és maradéktalanul végigcsináltad, akkor 2-10
 
 > Amiket honlapokat használok a példákban **nem** azért vannak, hogy pont olyanokat csinálj, mint amilyenek azok, hanem mert tudom, hogy azoknak minimalista és könnyen érthető a kódja. Nyugodtan csinálj azoknál jobbakat, szebbeket, funkcionálisabbakat és egyedibbeket. :)
 
-### **Előkészületek**
+### **1. Előkészületek**
 
 0.  Hozz létre egy index.html-s és egy style.css fájlt. (Remélem ez már megvolt eleve)
 1.  Hozz létre egy okj mappát és azon belül egy index.html-t.
@@ -155,7 +158,7 @@ Ha az előző pontokat helyesen és maradéktalanul végigcsináltad, akkor 2-10
 3.  Hozz létre egy info.html-t.
 4.  Hozz létre egy stb.html-t.
 
-### **index.html, okj/index.html, portfolio.html, info.html és az stb.html**
+### **2. index.html, okj/index.html, portfolio.html, info.html és az stb.html**
 
 1.  Az oldal tetején legyenek linkek, ami a többi html-re mutat.
 2.  Az oldal alján egy footer szövegként legyen ott, hogy ki csinálta a honlapot.
@@ -173,7 +176,7 @@ Kép a 4, 5 és 6-os ponthoz
 
 7. Nagyon opcionális: Ha szeretnéd, hogy gyorsan töltsenek be az oldalaid, akkor egy `compress image online` vagy `online image compressor` szolgáltatás segítségével tömörítheted a képeket.
 
-### **index.html**
+### **3. index.html**
 
 1. Legyen rajta egy bemutatkozás, hasonlóan a <a
              href="https://daniel.harka.com"
@@ -183,7 +186,7 @@ Kép a 4, 5 és 6-os ponthoz
    oldalhoz.
 2. Tehetsz fel egy képet is magadról.
 
-### **okj/index.html**
+### **4. okj/index.html**
 
 1. Tedd be az okj mappába az összes webfejlesztős gyakorlásodat/házidat.
 
@@ -200,7 +203,7 @@ A fájl struktúra valahogyan így nézzen ki:
    > Ez azért fontos, mert így ezeket az oldalakat nem kell visszalinkelni az okj/index.html-hez, hanem az tab/fül bezárásával, azonnal visszakerülnek a látogatók az okj.html oldalra.
 1. Az oldal aljára tegyél egy szintén új lapon/fülön/tabon megnyíló linket, ami a GitHub repo-don belüli okj mappát nyitja meg, nem pedig a profilodat. A link valahogy így fog kinézni: `https://github.com/KeresztnevVezeteknev/KeresztnevVezeteknev/tree/main/okj`
 
-### **portfolio.html**
+### **5. portfolio.html**
 
 1. Csinálj egy portfolió oldalt hasonlóan a
    <a href="https://daniel.harka.com/work" target="_blank">daniel.harka.com/work</a> oldalhoz.
@@ -210,7 +213,7 @@ A fájl struktúra valahogyan így nézzen ki:
 4. Legfelül legyen az, amelyikre a legbüszkébb vagy, majd pedig 'csökkenő sorrendben" a többi.
 5. Ha esetleg még nincsen olyan oldal, amire nagyon büszke lennél, párat akkor is válassz ki az okj-s oldaladról és linkelj azokhoz itt.
 
-### **info.html**
+### **6. info.html**
 
 1.  Legyen rajta egy hosszabb bemutatkozás vagy szöveg, hasonlóan a <a
         href="https://noemikadas.github.io/practise.html"
@@ -221,9 +224,13 @@ A fájl struktúra valahogyan így nézzen ki:
 2.  Ide már mindenképpen tegyél egy képet. Magadról, párodról, kutyádról, macskádról vagy a kocsidról.
 3.  Legyenek itt a szociális linkjeid, meg a GitHub linkedet is megjelenítheted, ami a profilodra mutat. Ezek ugyancsak nyíljanak meg új lapon.
 
-### **stb.html**
+### **7. stb.html**
 
 Ezt pedig nevezd át arra, amire csak szeretnéd és rakj bele bármilyen tetszőleges szöveget. Légy egyedi és kreatív! :)
+
+### **8. Ellenőrzés**
+
+Nézd vissza az 1-es pontot, hogy az összes html (kivéve a gyakorlások és a házik) megfelelnek-e a leírtaknak.
 
 ## 7. Gratuláció!
 
