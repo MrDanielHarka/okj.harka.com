@@ -1,6 +1,6 @@
 body {
   padding: 15px;
-  width: 725px;
+  max-width: 725px;
   margin: 10px auto;
   padding: 0 10px;
   font-family: 'Purple Purse', cursive;
