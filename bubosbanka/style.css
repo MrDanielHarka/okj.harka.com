@@ -53,10 +53,11 @@ td:nth-child(2) {
   text-align: left;
 }
 
-.fejsor {
+.headline {
   text-align: center;
   background-color: green;
-  color: #e7e7ff;
+  color: white;
+  letter-spacing: 2px;
 }
 
 .source {
