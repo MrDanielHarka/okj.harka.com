@@ -16,6 +16,7 @@ a,
 a:visited,
 a:active {
   color: darkgreen;
+  text-decoration: none;
 }
 
 p {
@@ -31,7 +32,7 @@ p {
 
 #rightPic {
   float: right;
-  width: 370px;
+  width: 365px;
   margin: 10px;
 }
 

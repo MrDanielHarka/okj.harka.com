@@ -76,14 +76,14 @@ titleText('Admin belépés');
 messageLogin('Jelentkezz be!');
 
 let username = 'DanielHarka';
-let password = '1993-05-21';
+let password = '19930521';
 let number1 = Math.trunc(Math.random() * 10 + 1);
 let number2 = Math.trunc(Math.random() * 10 + 1);
 username = 'MrDaniel';
-password = '1993-02';
+password = '199302';
 let questionMath = number1 + number2;
 let questionText = `${number1}+${number2}`;
 username += 'Harka';
-password += '-0' + Math.pow(3, 2);
+password += '0' + Math.pow(3, 2);
 
 document.querySelector('#questionText').textContent = questionText;
