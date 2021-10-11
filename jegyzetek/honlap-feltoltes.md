@@ -222,7 +222,7 @@ A fájl struktúra valahogyan így nézzen ki:
         >noemikadas.github.io</a>
     oldalhoz, csak ne lorem ipsumokat írj. :D
 2.  Ide már mindenképpen tegyél egy képet. Magadról, párodról, kutyádról, macskádról vagy a kocsidról.
-3.  Legyenek itt a szociális linkjeid, meg a GitHub linkedet is megjelenítheted, ami a profilodra mutat. Ezek ugyancsak nyíljanak meg új lapon.
+3.  Legyen itt email cím, a szociális linkjeid, meg a GitHub linkedet is megjelenítheted, ami a profilodra mutat. Ezek ugyancsak nyíljanak meg új lapon. Meg tegyél ide még, amit csak szeretnél.
 
 ### **7. stb.html**
 

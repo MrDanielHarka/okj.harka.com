@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python futtatása | okj.harka.com</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      body {
+        max-width: 500px;
+      }
+    </style>
+  </head>
+  <body onload="brython()">
+    <h1>Python futtatása weben</h1>
+
+    <hr noshade />
+
+    <h2>21. feladat és a megoldásom</h2>
+    <p>Írj programot, mely csak pozitív számot hajlandó beolvasni.</p>
+    <pre><code class="python">number = 0
+while number >= 0:
+    number = int(input("Írj be egy számot! "))
+    if number >= 0:
+      print("Ez a szám: " + str(number) +
+    ". Most kérek egy másik számot!")
+print ("Ezt nem vagyok hajlandó beolvasni!")
+</code></pre>
+    number =
+    <input type="number" id="task21" placeholder="Írj be egy számot!" />
+    <br /><br />
+    <span id="task21text"></span>
+
+    <script type="text/python" id="script21">
+      from browser import document
+
+      def show_text(e):
+          number = number = int(e.target.value)
+          if number >= 0:
+            document['task21text'].textContent =("Ez a szám: " + str(number) + ". Most kérek egy másik számot!")
+          else:
+            document['task21text'].textContent = ("Ezt a számot nem vagyok hajlandó beolvasni!")
+      document['task21'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h2>20. feladat és a megoldásom</h2>
+    <p>
+      Írj programot, mely beolvassa a hatvány alapját és a kitevőt, és kiírja a
+      hatványértéket!
+    </p>
+    <pre><code class="python">base = 2
+exponent = int(input("Írj be egy számot!"))
+print (str(base) + "^" + str(exponent)
++ " = " + str(base**exponent))
+</code></pre>
+    exponent =
+    <input type="number" id="task20" placeholder="Írj be egy számot!" />
+    <br /><br />
+    <span id="task20text"></span>
+
+    <script type="text/python" id="script20">
+      from browser import document
+
+      def show_text(e):
+          base = 2
+          exponent = int(e.target.value)
+          document['task20text'].textContent = (str(base) + "^" + str(exponent) + " = " + str(base**exponent))
+      document['task20'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h2>19. feladat és a megoldásom</h2>
+    <p>
+      Írj programot, mely beolvas egy pozitív egész számot, és megmondja, hogy
+      tökéletes szám-e! (A tökéletes számok azok, melyek osztóinak összege
+      egyenlő a szám kétszeresével. Ilyen szám pl. a 6, mert 2*6 = 1 + 2 + 3 +
+      6.)
+    </p>
+    <pre><code class="python">number = int(input("Írj be egy számot!"))
+addition = 0
+
+for x in range(number+1, 0, -1):
+  if number%(x) == 0:
+    addition += (x)
+
+if number*2 == addition:
+    print (str(number) +
+    " egy tökéletes szám.")
+else:
+    print (str(number) +
+    " nem egy tökéletes szám.")
+</code></pre>
+    number =
+    <input type="number" id="task19" placeholder="Írj be egy számot!" />
+    <br /><br />
+    <span id="task19text"></span>
+
+    <script type="text/python" id="script19">
+      from browser import document
+
+      def show_text(e):
+          number = int(e.target.value)
+          addition = 0
+          for x in range(number+1, 0, -1):
+            if number%(x) == 0:
+              addition += (x)
+          if number*2 == addition:
+              document['task19text'].textContent =  (str(number) + " egy tökéletes szám.")
+          else:
+              document['task19text'].textContent = (str(number) + " nem egy tökéletes szám.")
+      document['task19'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h2>18. feladat és a megoldásom</h2>
+    <p>
+      Írj programot, mely beolvas egy pozitív egész számot, és kiírja az
+      osztóinak az összegét!
+    </p>
+
+    <pre><code class="python">number = int(input("Írj be egy számot!"))
+addition = 0
+
+for x in range(number+1, 0, -1):
+  if number%(x) == 0:
+    addition += (x)
+
+print ("A(z) " + str(number)
++ " összes osztójának összege: "
++ str(addition))
+</code></pre>
+    number =
+    <input type="number" id="task18" placeholder="Írj be egy számot!" />
+    <br /><br />
+    <span id="task18text"></span>
+
+    <script type="text/python" id="script18">
+      from browser import document
+
+      def show_text(e):
+          number = int(e.target.value)
+          addition = 0
+          for x in range(number+1, 0, -1):
+            if number%(x) == 0:
+              addition += (x)
+              document['task18text'].textContent = ("A(z) " + str(number) + " összes osztójának összege: " + str(addition))
+      document['task18'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h2>17. feladat és a megoldásom</h2>
+    <p>
+      Írj programot, mely beolvas egy pozitív egész számot, és kiírja az
+      osztóinak az összegét!
+    </p>
+    <pre><code class="python">number = int(input("Írj be egy számot!"))
+text = "A(z) " + str(number)
++ " összes osztója: "
+
+for x in range(number+1, 0, -1):
+  if number%(x) == 0:
+    text += str(x) + ", "
+print (text)
+</code></pre>
+    number =
+    <input type="number" id="task17" placeholder="Írj be egy számot!" />
+    <br /><br />
+    <span id="task17text"></span>
+
+    <script type="text/python" id="script17">
+      from browser import document
+
+      def show_text(e):
+          number = int(e.target.value)
+          text = "A(z) " + str(number) + " összes osztója: "
+          for x in range(number+1, 0, -1):
+            if number%(x) == 0:
+              text += str(x) + ", "
+          document['task17text'].textContent = text
+      document['task17'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h2>16. feladat és a megoldásom</h2>
+    <p>
+      Írj programot, mely beolvas egy pozitív egész számot, és kiírja az egész
+      számokat egymás alá a képernyőre eddig a számig!
+    </p>
+    <pre><code class="python">number = 5
+  for x in range(0, number+1, 1):
+print(x)</code></pre>
+    <button id="button16">Futtatás</button>
+    <p id="task16"></p>
+
+    <hr noshade />
+
+    <h2>15. feladat és a megoldásom</h2>
+    <p>
+      Írj programot, mely beolvas egy pozitív egész számot, és kiírja az egész
+      számokat a képernyőre eddig a számig, egymástól szóközzel elválasztva!
+    </p>
+    <pre><code class="python">number = int(input("Írj be egy számot!")) 
+list = "A kért számok: "
+
+for x in range(0, number+1, 1):
+  list += str(x) + ", "
+
+print(list)</code></pre>
+    number =
+    <input type="number" id="task15" placeholder="Írj be egy számot!" />
+    <br /><br />
+    <span id="task15text"></span>
+
+    <script type="text/python" id="script15">
+      from browser import document
+
+      def show_text(e):
+          number = int(e.target.value)
+          list = "A kért számok: "
+          for x in range(0,number+1, 1):
+            list += str(x) + ", "
+          document['task15text'].textContent = list
+
+      document['task15'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h2>7 - 14. feladat és a megoldásom</h2>
+    <p>Megoldás? Milyen megoldás? Nincsen ám matematika PhD-m... :D</p>
+
+    <!-- <hr noshade />
+
+    <h2>7. feladat és a megoldásom</h2>
+    <p>Írj programot, mely beolvassa a háromszög oldalainak hosszát, és megmondja, hogy
+ilyen oldalakkal szerkeszthető-e háromszög!</p>
+    <pre><code class="python">triangleSide1 = 5
+triangleSide2 = 6
+triangleSide3 = -5
+
+if triangleSide1 < 1
+or triangleSide2 < 1
+or triangleSide3 < 1:
+    print("Ezekkel a számokkal nem lehet
+    háromszöget szerkeszteni.")
+else:
+    print("Ezekkel a számokkal lehet
+    háromszöget szerkeszteni.")</code></pre>
+    <button id="button7">Futtatás</button>
+    <p id="task7"></p>
+    <script type="text/python" id="script7">
+      from browser import document, console, alert
+
+      def show(e):
+          triangleSide1 = 5
+          triangleSide2 = 6
+          triangleSide3 = -5
+
+          if triangleSide1 < 1 or triangleSide2 < 1 or triangleSide3 < 1:
+              document['task7'] <= ("Ezekkel a számokkal nem lehet háromszöget szerkeszteni.")
+          else:
+              document['task7'] <= ("Ezekkel a számokkal lehet háromszöget szerkeszteni.")
+
+
+      document['button7'].bind('click', show)
+    </script> -->
+
+    <hr noshade />
+
+    <h2>6. feladat és a megoldásom</h2>
+    <p>
+      Írj programot, mely beolvas három egész számot, és kiírja a képernyőre a
+      legkisebbet!
+    </p>
+    <pre><code class="python">numbers = [-7, 0, -999]
+print ("A legnagyobb szám a ", max(numbers),"." )</code></pre>
+    <button id="button6">Futtatás</button>
+    <p id="task6"></p>
+    <script type="text/python" id="script6">
+      from browser import document, console, alert
+
+      def show(e):
+          numbers = [-7, 0, -999]
+          document['task6'] <= ("A legnagyobb szám a ", max(numbers),"." )
+
+
+      document['button6'].bind('click', show)
+    </script>
+
+    <hr noshade />
+
+    <h2>5. feladat és a megoldásom</h2>
+    <p>
+      Írj programot, mely beolvas két egész számot, és kiírja a képernyőre a
+      nagyobbikat!
+    </p>
+    <pre><code class="python">numbers = [21, -7, 69]
+print ("A legkisebb szám a ", min(numbers),"." )</code></pre>
+    <button id="button5">Futtatás</button>
+    <p id="task5"></p>
+    <script type="text/python" id="script5">
+      from browser import document, console, alert
+
+      def show(e):
+          numbers = [21, -7, 69]
+          document['task5'] <= ("A legkisebb szám a ", min(numbers),"." )
+
+
+      document['button5'].bind('click', show)
+    </script>
+
+    <hr noshade />
+
+    <h2>4. feladat és a megoldásom</h2>
+    <p>
+      Írj programot, mely beolvas két számot, majd kiírja: a. az összegüket; b.
+      különbségüket; c. szorzatukat; d. hányadosukat, ha lehet!
+    </p>
+    <pre><code class="python">number = 100
+number2 = int(input("Írj be egy számot!"))
+print(number+number2, number-number2,
+number*number2, number/number2)</code></pre>
+    number2 =
+    <input type="number" id="task4" placeholder="Írj be egy számot!" />
+    <br /><br />
+    <span id="task4text"></span>
+
+    <script type="text/python" id="script4">
+      from browser import document
+
+      def show_text(e):
+          number = int(100)
+          number2 = int(e.target.value)
+          document['task4text'].textContent = (str(number+number2) + ", " + str(number-number2) + ", " + str(number*number2) + ", " + str(number/number2))
+
+      document['task4'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h2>3. feladat és a megoldásom</h2>
+    <p>Írj programot, mely beolvas egy számot, majd kiírja a kétszeresét!</p>
+    <pre><code class="python">number = int(input("Írj be egy számot!"))
+print (number * 2)</code></pre>
+    number =
+    <input type="number" id="task3" placeholder="Írj be egy számot!" />
+    <br /><br />
+    <span id="task3text"></span>
+
+    <script type="text/python" id="script3">
+      from browser import document
+
+      def show_text(e):
+          number = int(e.target.value)
+          document['task3text'].textContent = number * 2
+
+      document['task3'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h2>2. feladat és a megoldásom</h2>
+    <p>Írj programot, mely beolvassa a felhasználó nevét, majd köszön neki!</p>
+    <pre><code class="python">name = input("Add meg a neved!")
+greeting = "Hali, "
+print (greeting + name + "!")</code></pre>
+    name =
+    <input type="text" id="task2" placeholder="Add meg a neved!" />
+    <br /><br />
+    <span id="task2text"></span>
+
+    <script type="text/python" id="script2">
+      from browser import document
+
+      def show_text(e):
+
+          name = (e.target.value)
+          greeting = "Hali, "
+          document['task2text'].textContent = (greeting + name + "!")
+
+      document['task2'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h2>1. feladat és a megoldásom</h2>
+    <p>Írj programot, mely kiírja a képernyőre, hogy ”Hello world!”!</p>
+    <pre><code class="python">print ("Csövi, Világ!")</code></pre>
+    <button id="button1">Futtatás</button>
+    <p id="task1"></p>
+    <script type="text/python" id="script1">
+      from browser import document, console, alert
+
+      def show(e):
+          document['task1'] <= ("Csövi, Világ!")
+
+
+      document['button1'].bind('click', show)
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.0/brython.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.0/brython_stdlib.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="script.js"></script>
+
+    <hr noshade />
+    <p>
+      Forráskód:
+      <a
+        href="https://github.com/MrDanielHarka/okj.harka.com/blob/main/python"
+        target="_blank"
+        rel="noreferrer noopener nofollow"
+        >GitHub</a
+      >
+    </p>
+  </body>
+</html>
