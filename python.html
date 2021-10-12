@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
-
     <link
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
@@ -21,6 +20,11 @@
   </head>
   <body onload="brython()">
     <h1>Python futtatása weben</h1>
+    <p>
+      <span class="bold">Protip:</span> Ha az aktív szám-mezőkben nyomogatod
+      vagy lenyomva tartod a billentyűzet fel/le gombját, akkor azonnal látod a
+      nagyobb/kisebb számok eredményét.
+    </p>
 
     <hr noshade />
 
@@ -38,7 +42,6 @@ print ("Ezt nem vagyok hajlandó beolvasni!")
     <input type="number" id="task21" placeholder="Írj be egy számot!" />
     <br /><br />
     <span id="task21text"></span>
-
     <script type="text/python" id="script21">
       from browser import document
 
@@ -263,7 +266,7 @@ else:
     <button id="button7">Futtatás</button>
     <p id="task7"></p>
     <script type="text/python" id="script7">
-      from browser import document, console, alert
+      from browser import document
 
       def show(e):
           triangleSide1 = 5
@@ -291,7 +294,7 @@ print ("A legnagyobb szám a ", max(numbers),"." )</code></pre>
     <button id="button6">Futtatás</button>
     <p id="task6"></p>
     <script type="text/python" id="script6">
-      from browser import document, console, alert
+      from browser import document
 
       def show(e):
           numbers = [-7, 0, -999]
@@ -313,7 +316,7 @@ print ("A legkisebb szám a ", min(numbers),"." )</code></pre>
     <button id="button5">Futtatás</button>
     <p id="task5"></p>
     <script type="text/python" id="script5">
-      from browser import document, console, alert
+      from browser import document
 
       def show(e):
           numbers = [21, -7, 69]
@@ -403,7 +406,7 @@ print (greeting + name + "!")</code></pre>
     <button id="button1">Futtatás</button>
     <p id="task1"></p>
     <script type="text/python" id="script1">
-      from browser import document, console, alert
+      from browser import document
 
       def show(e):
           document['task1'] <= ("Csövi, Világ!")
@@ -412,23 +415,47 @@ print (greeting + name + "!")</code></pre>
       document['button1'].bind('click', show)
     </script>
 
+    <hr noshade />
+    <footer>
+      Forráskód:
+      <a
+        href="https://github.com/MrDanielHarka/okj.harka.com/blob/main/python.html"
+        target="_blank"
+        rel="noreferrer noopener nofollow"
+        >GitHub</a
+      >
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.0/brython.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.0/brython_stdlib.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
     </script>
-    <script src="script.js"></script>
+    <script>
+      document
+        .getElementById('button16')
+        .addEventListener('click', function () {
+          document.getElementById('button16').style.display = 'none';
+          document.getElementById('task16').innerHTML =
+            '<p> 0 <br/> 1 <br/> 2 <br/> 3 <br/> 4 <br/> 5 </p>';
+        });
 
-    <hr noshade />
-    <p>
-      Forráskód:
-      <a
-        href="https://github.com/MrDanielHarka/okj.harka.com/blob/main/python"
-        target="_blank"
-        rel="noreferrer noopener nofollow"
-        >GitHub</a
-      >
-    </p>
+      // document.getElementById('button7').addEventListener('click', function () {
+      //   document.getElementById('button7').style.display = 'none';
+      // });
+
+      document.getElementById('button6').addEventListener('click', function () {
+        document.getElementById('button6').style.display = 'none';
+      });
+
+      document.getElementById('button5').addEventListener('click', function () {
+        document.getElementById('button5').style.display = 'none';
+      });
+
+      document.getElementById('button1').addEventListener('click', function () {
+        document.getElementById('button1').style.display = 'none';
+      });
+    </script>
   </body>
 </html>
