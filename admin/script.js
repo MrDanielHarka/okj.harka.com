@@ -44,6 +44,9 @@ document.querySelector('#buttonLogin').addEventListener('click', function () {
   } else {
     titleText('Admin oldal');
     messageLogin('Sikeres bejelentkezés!');
+    setTimeout(function () {
+      messageLogin('');
+    }, 3000);
     messageLoginColor('green');
     document.getElementById('statusLogin').innerHTML =
       'Felhasználó: <span class="bold">mrdanielharka</span> (<a href=".">kijelentkezés</a>)';

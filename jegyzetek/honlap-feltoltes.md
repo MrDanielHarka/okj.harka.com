@@ -5,11 +5,18 @@
 Ez a leírás pontról-pontra végigvezet rajta. Ez már a GitHub szerverén elhelyezett, ténylegesen "Ez az első honlapom!" lesz, a korábbiakkal ellentétben. :D
 
 Igyekeztem érthetően fogalmazni, de visszajelzéseket és kérdéseket szívesen fogadok <a
-          href="https://www.facebook.com/messages/t/MrDanielHarka"
+          href="https://facebook.com/MrDanielHarka"
           target="_blank"
           rel="noreferrer noopener nofollow"
           >Facebook</a
-        >-on. :)
+        >-on vagy a
+<a
+          href="https://discord.gg/5kh7GszCKC"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >Discord</a
+        >
+szerverünkön. :)
 
 ## Kedvcsináló
 
@@ -67,7 +74,16 @@ Az alábbi honlapok mind ezzel (vagy nagyon hasonló) folyamattal lettek publik�
 
 Küldd el, ha kész a tiéd is és felrakom ide. :)
 
-## 1. GitHub felhasználó létrehozása
+## 1. Feltöltendő honlap elkészítése
+
+1.  Hozz létre egy új mappát amibe teszed a honlap fájljait.
+2.  Opcionális: Javaslom a `keresztnevedvezetekneved.github.io` mappanevet, mert ez lehet egy lehetséges név a honlapod publikálására.
+3.  A mappában hozz létre egy `index.html` fájlt.
+4.  Hozz létre egy `style.css` fájlt.
+5.  Linkeld össze a kettőt.
+6.  Készítsd el a honlapodat.
+
+## 2. GitHub felhasználó létrehozása
 
 Ha ez már megvan, akkor ugorj a következő alcímhez!
 
@@ -80,23 +96,15 @@ Ha ez már megvan, akkor ugorj a következő alcímhez!
 2.  Adj meg egy olyan email-t amit nézel is.
 3.  Aztán egy jelszót, amit meg is jegyzel. :D
 4.  FONTOS! Majd pedig egy felhasználónevet, ami `KeresztnevVezeteknev` módon néz ki.
-5.  **Nem muszáj nagybetűnek lennie. Később viszont általában így utalok a felhasználónévre, mert így könnyen látható/értelmezhető.**
+5.  **Nem muszáj nagybetűnek lennie. Később viszont általában így utalok a felhasználónévre, mert így könnyen kiolvasható/értelmezhető.**
 6.  "Would you like to receive product updates and announcements via email? Type "y" for yes or "n" for no." Itt nyomj egy `n`-t.
 
-![Reg](githubreg.jpg)
+![Reg](img/githubreg.jpg)
 
 7. Katt a `Start puzzle`-re.
 8. Katt a legvilágosabb 3, 4 vagy 5 ágú, spirálos képre.
 9. Katt a `Create account`-ra.
 10. Nézd meg a mailed és Ctr+V-zd vagy írd be a kapott számot.
-
-## 2. Feltöltendő honlap elkészítése
-
-1.  Hozz létre egy új mappát aminek a neve a következő: `githubfelhasznalonev.github.io`.
-2.  A mappában hozz létre egy `index.html` fájlt.
-3.  Hozz létre egy `style.css` fájlt.
-4.  Linkeld össze a kettőt.
-5.  Készítsd el a honlapodat.
 
 ## 3. Repository létrehozása és honlap feltöltése
 
@@ -152,39 +160,28 @@ Ha az előző pontokat helyesen és maradéktalanul végigcsináltad, akkor 2-10
 
 ### **1. Előkészületek**
 
-0.  Hozz létre egy index.html-s és egy style.css fájlt. (Remélem ez már megvolt eleve)
+0.  Hozz létre egy index.html-t és style.css-t. (Remélhetőleg ez már kész. Ugrás a következő pontra.)
 1.  Hozz létre egy okj mappát és azon belül egy index.html-t.
 2.  Hozz létre egy portfolio.html-t.
 3.  Hozz létre egy info.html-t.
 4.  Hozz létre egy stb.html-t.
 
-### **2. index.html, okj/index.html, portfolio.html, info.html és az stb.html**
+### **2. index.html**
 
-1.  Az oldal tetején legyenek linkek, ami a többi html-re mutat.
-2.  Az oldal alján egy footer szövegként legyen ott, hogy ki csinálta a honlapot.
-3.  Legyenek összekötve a style.css fájlal, hogy minden oldalon egységes legyen a dizájn és ne kelljen újra meg újra lekódolni a kinézetet.
-4.  Ha egy html fájl amihez linkelni szeretnél a root/gyökérkönyvtárban van az index.html mellett akkor így tudsz hozzá linkelni:
-    `<a href="oldal2.html">Ez egy oldal</a>`.
-5.  Ha pedig egy másik mappában van, akkor nevezd el a megjeleníteni kívánt oldalt index.html-nek és az elérési útba a **mappa** nevét írd be és hagyd el a `.html` fájlkiterjesztést és a böngésző automatikusan tudni fogja, hogy a mappán belül az index.html-t nyissa meg.
-    Példa: `<a href="oldal3">Ez egy másik oldal</a>`.
-6.  Ha egy almappán belül az index.html-en kívűl más html-t szeretnél megnyitni, akkor kell a html fájl neve és a .html a végére.
-    Példa: `<a href="oldal3/oldal4.html">Ez egy másik oldal</a>`
+0.  Remélhetőleg már ez is kész. Ugrás a következő alcímre.
+1.  Legyen rajta egy bemutatkozás, hasonlóan a <a
+              href="https://daniel.harka.com"
+              target="_blank"
+              >daniel.harka.com</a
+            >
+    oldalhoz.
+2.  Tehetsz fel egy képet is magadról.
 
-Kép a 4, 5 és 6-os ponthoz
+### **3. style.css**
 
-![Linkeles](linkeles.jpg)
-
-7. Nagyon opcionális: Ha szeretnéd, hogy gyorsan töltsenek be az oldalaid, akkor egy `compress image online` vagy `online image compressor` szolgáltatás segítségével tömörítheted a képeket.
-
-### **3. index.html**
-
-1. Legyen rajta egy bemutatkozás, hasonlóan a <a
-             href="https://daniel.harka.com"
-             target="_blank"
-             >daniel.harka.com</a
-           >
-   oldalhoz.
-2. Tehetsz fel egy képet is magadról.
+0.  Remélhetőleg már ez is kész. Ugrás a következő alcímre.
+1.  Hozd itt létre azokat a stílusokat, amiket az összes össszes oldalon szeretnél látni.
+2.  Később ahogy a többi oldalt létrehozod hozz létre új CSS deklarációkat.
 
 ### **4. okj/index.html**
 
@@ -192,7 +189,7 @@ Kép a 4, 5 és 6-os ponthoz
 
 A fájl struktúra valahogyan így nézzen ki:
 
-![Struktura](file-struktura.jpg)
+![Struktura](img/file-struktura.jpg)
 
 2. Az okj/index.html legyen egy linkgyűjtemény oldal, hasonlóan a <a
    href="https://okj.harka.com"
@@ -226,21 +223,42 @@ A fájl struktúra valahogyan így nézzen ki:
 
 ### **7. stb.html**
 
-Ezt pedig nevezd át arra, amire csak szeretnéd és rakj bele bármilyen tetszőleges szöveget. Légy egyedi és kreatív! :)
+Ezt pedig nevezd át arra, amire csak szeretnéd és rakj bele bármilyen tetszőleges tartalmat. Légy egyedi és kreatív! :)
 
-### **8. Ellenőrzés**
+### **8. index.html, okj/index.html, portfolio.html, info.html és az stb.html**
 
-Nézd vissza az 1-es pontot, hogy az összes html (kivéve a gyakorlások és a házik) megfelelnek-e a leírtaknak.
+1.  Az oldal tetején legyenek linkek, ami a többi html-re mutat.
+2.  Az oldal alján egy footer szövegként legyen ott, hogy ki csinálta a honlapot.
+3.  Legyenek összekötve a style.css fájlal, hogy minden oldalon egységes legyen a dizájn és ne kelljen újra meg újra lekódolni a kinézetet.
+4.  Ha egy html fájl amihez linkelni szeretnél a root/gyökérkönyvtárban van az index.html mellett akkor így tudsz hozzá linkelni:
+    `<a href="oldal2.html">Ez egy oldal</a>`.
+5.  Ha pedig egy másik mappában van, akkor nevezd el a megjeleníteni kívánt oldalt index.html-nek és az elérési útba a **mappa** nevét írd be és hagyd el a `.html` fájlkiterjesztést és a böngésző automatikusan tudni fogja, hogy a mappán belül az index.html-t nyissa meg.
+    Példa: `<a href="oldal3">Ez egy másik oldal</a>`.
+6.  Ha egy almappán belül az index.html-en kívűl más html-t szeretnél megnyitni, akkor kell a html fájl neve és a .html a végére.
+    Példa: `<a href="oldal3/oldal4.html">Ez egy másik oldal</a>`
+
+Kép a 4, 5 és 6-os ponthoz
+
+![Linkeles](img/linkeles.jpg)
+
+7. Nagyon opcionális: Ha szeretnéd, hogy gyorsan töltsenek be az oldalaid, akkor egy `compress image online` vagy `online image compressor` szolgáltatás segítségével tömörítheted a képeket.
 
 ## 7. Gratuláció!
 
-Nagyon gratulálok és elképesztően büszke vagyok rád, hogy ha ezt úgy olvasod, hogy végigcsináltad az egészet. Ha csak idegörgettél, akkor nyomás az elejére! :D
+Nagyon gratulálok és elképesztően büszke vagyok rád, amennyiben ezt úgy olvasod, hogy végigcsináltad az egészet. Ha csak idegörgettél, akkor nyomás vissza az elejére! :D
 
 Ismét megjegyzem, hogy visszajelzéseket és kérdéseket szívesen fogadok <a
-          href="https://www.facebook.com/messages/t/MrDanielHarka"
+          href="https://facebook.com/MrDanielHarka"
           target="_blank"
           rel="noreferrer noopener nofollow"
           >Facebook</a
-        >-on.
+        >-on vagy a
+<a
+          href="https://discord.gg/5kh7GszCKC"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >Discord</a
+        >
+szerverünkön.
 
 **Csak így tovább! :)**
