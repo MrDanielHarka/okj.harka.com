@@ -141,20 +141,16 @@ Ha ez már megvan, akkor ugorj a következő alcímhez!
 13. Most kattints a jobb fenti sarokban levő `Settings` gombra.
 14. Majd pedig a bal oldalon a `Pages` gombra.
 15. A `None` menüt váltsd át `main`-re, majd klikk `Save`.
+16. Ha az előző pontokat helyesen és maradéktalanul végigcsináltad, akkor 2-10 percen belül megjelenik a már ténylegesen "Ez az első honlapom!" bármelyik böngészőben.
+17. Kattints a honlapod linkjére a GitHub-on belül vagy írd be bármelyik böngésző címsorába a következő módon: `aMegadottFelhasznaloNeved.github.io` Voilà!
 
-## 4. Honlapod leellenőrzése/meglátogatása
-
-Ha az előző pontokat helyesen és maradéktalanul végigcsináltad, akkor 2-10 percen belül megjelenik a már ténylegesen "Ez az első honlapom!" bármelyik böngészőben az alábbit beírva:
-
-`aMegadottFelhasznaloNeved.github.io` Wow!
-
-## 5. Már feltöltött honlap módosítása
+## 4. Már feltöltött honlap módosítása
 
 1. Megnyitod azt a repo-t, ahova feltöltötted a honlapodat.
 2. Rákattintasz arra a (html, css, js, stb.) fájlra, amit módosítanál.
 3. A jobb fenti sarokban a ceruzára kattintva módosítani tudod és be tudod másolni az új fájl kódját vagy a kukára kattintva törölheted és feltöltheted az újat.
 
-## 6. Ötletek egy fullos honlap elkészítéséhez
+## 5. Ötletek egy fullos honlap elkészítéséhez
 
 > Amiket honlapokat használok a példákban **nem** azért vannak, hogy pont olyanokat csinálj, mint amilyenek azok, hanem mert tudom, hogy azoknak minimalista és könnyen érthető a kódja. Nyugodtan csinálj azoknál jobbakat, szebbeket, funkcionálisabbakat és egyedibbeket. :)
 
@@ -194,7 +190,6 @@ A fájl struktúra valahogyan így nézzen ki:
 2. Az okj/index.html legyen egy linkgyűjtemény oldal, hasonlóan a <a
    href="https://okj.harka.com"
    target="_blank"> okj.harka.com</a> oldalhoz.
-
 1. Linkeld be az összes megcsinált webfejlesztéses házidat.
 1. A linkek nyíljanak meg új lapon/fülön/tabon, nem a jelenlegi nézetben.
    > Ez azért fontos, mert így ezeket az oldalakat nem kell visszalinkelni az okj/index.html-hez, hanem az tab/fül bezárásával, azonnal visszakerülnek a látogatók az okj.html oldalra.
@@ -243,7 +238,7 @@ Kép a 4, 5 és 6-os ponthoz
 
 7. Nagyon opcionális: Ha szeretnéd, hogy gyorsan töltsenek be az oldalaid, akkor egy `compress image online` vagy `online image compressor` szolgáltatás segítségével tömörítheted a képeket.
 
-## 7. Gratuláció!
+## 6. Gratuláció!
 
 Nagyon gratulálok és elképesztően büszke vagyok rád, amennyiben ezt úgy olvasod, hogy végigcsináltad az egészet. Ha csak idegörgettél, akkor nyomás vissza az elejére! :D
 
