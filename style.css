@@ -33,3 +33,7 @@ a:active {
 div label {
   font-weight: bold;
 }
+
+.red {
+  color: red;
+}

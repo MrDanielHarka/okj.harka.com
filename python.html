@@ -11,10 +11,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Python futtatása | okj.harka.com</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
     <style>
       body {
-        max-width: 500px;
+        max-width: 510px;
       }
     </style>
   </head>
@@ -26,9 +26,191 @@
       nagyobb/kisebb számok eredményét.
     </p>
 
+    <h2>programozási-alapok-jegyzet.pdf megoldások</h2>
+
+    <h3>10.3.15 / 1-3. feladat és a megoldásom</h3>
+    <p>
+      Készíts függvényt a következő képletek megoldására!
+      <br />
+      1. (a-b)*(b/a)
+      <br />
+      2. (a+b)/(a*b)+6
+      <br />
+      3. b**3+(a**2)*(a+b)
+      <br />
+    </p>
+    <pre><code class="python">def operation1(a, b):
+  solution = (a-b)*(b/a)
+  return(solution)
+
+def operation2(a, b):
+  solution = (a+b)/(a*b)+6
+  return(solution)
+
+def operation3(a, b):
+  solution = b**3+(a**2)*(a+b)
+  print("3. képlet eredménye: " + str(solution))
+
+a = int(input('Írd be az "a" értékét! '))
+b = int(input('Írd be a "b" értékét! '))
+
+print("1. képlet eredménye: "
++ str(operation1(a, b)))
+
+print("2. képlet eredménye: "
++ str(operation2(a, b)))
+
+operation3(a, b)</code></pre>
+    <p class="bold">
+      Példa "a" érték: 10
+      <br />
+      Példa "b" érték: 5
+    </p>
+    <button id="button103151">Futtatás</button>
+    <p id="task103151"></p>
+
     <hr noshade />
 
-    <h2>21. feladat és a megoldásom</h2>
+    <h3>10.3.11 / 4. feladat és a megoldásom</h3>
+    <p>
+      Kérd be egy négyzet oldalának értékét és számold ki a területét és a
+      kerületét! (K=4*a,T=a*a)
+    </p>
+    <pre><code class="python">side = int(input("Írj be egy számot! "))
+perimeter = 4*side
+area = side*side
+
+print("A négyzet kerülete " + str(perimeter)
++ " és a területe " + str(area) + "." )
+</code></pre>
+    <p>Írj be egy számot!</p>
+    <input type="number" id="task103114" placeholder="side" />
+    <br /><br />
+    <span id="task103114text"></span>
+    <script type="text/python" id="script103114">
+      from browser import document
+
+      def show_text(e):
+          side = int(e.target.value)
+          perimeter = 4*side
+          area = side*side
+          document['task103114text'].textContent = ("A négyzet kerülete " + str(perimeter) + " és a területe " + str(area) + "." )
+      document['task103114'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h3>10.3.11 / 3. feladat és a megoldásom</h3>
+    <p>
+      Jelenleg pontosan 14 óra van. Beállítunk egy ébresztőórát úgy, hogy 51
+      órával később csörögjön. Hány órakor fog az ébresztőóra megszólalni?
+    </p>
+    <pre><code class="python">hours = int(input("Hány óra múlva "
++ "szólaljon meg az ébresztő? "))
+print("Az ébresztő " + str((14+hours) % 24)
++ ":00 órakor fog megszólalni.")
+</code></pre>
+    <p>Hány óra múlva szólaljon meg az ébresztő?</p>
+    <input type="number" id="task103113" placeholder="hours" />
+    <br /><br />
+    <span id="task103113text"></span>
+    <script type="text/python" id="script103113">
+      from browser import document
+
+      def show_text(e):
+          hours = int(e.target.value)
+          document['task103113text'].textContent = ("Az ébresztő " + str((14+hours) % 24) + ":00 órakor fog megszólalni.")
+      document['task103113'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h3>10.3.11 / 2. feladat és a megoldásom</h3>
+    <p>
+      Számold ki az alábbi kifejezések értékét fejben, majd ellenőrizd a Python
+      értelmező segítségével:
+      <br />
+      >>> 5 % 2
+      <br />
+      >>> 9 % 5
+      <br />
+      >>> 15 % 12
+      <br />
+      >>> 12 % 15
+      <br />
+      >>> 6 % 6
+      <br />
+      >>> 0 % 7
+      <br />
+      >>> 7 % 0
+    </p>
+    <pre><code class="python">print(5 % 2)
+print(9 % 5)
+print(15 % 12)
+print(12 % 15)
+print(6 % 6)
+print(0 % 7)
+print(7 % 0)</code></pre>
+    <button id="button103112">Futtatás</button>
+    <p id="task103112"></p>
+
+    <hr noshade />
+
+    <h3>10.3.11 / 1. feladat és a megoldásom</h3>
+    <p>
+      Írj programot, amely meghatározza, mennyi lesz egy betét értéke a futamidő
+      végén, ha 10000 Ft-t helyezünk betétbe 8%-os névleges kamatláb mellett. Az
+      évközi kamatozások száma (m) 12. Az évek számát, vagyis a t értékét a
+      felhasználótól kérje be a program. A futamidő végén nézett értéket (FV) az
+      alábbi képlet alapján számold:
+      <br />
+      <span class="bold">FV=C*(1+(r/m)**(mt)</span>
+    </p>
+    <pre><code class="python">print("BETÉT (10.000Ft) ÉRTÉKE A FUTAMIDŐ VÉGÉN"
++ "\n\nKéplet: FV=C*(1+(r/m)**(mt)\n\nC: alaptőke"
++"(10.000Ft)\nr: éves névleges kamatláb (8%)\nm:"
++" évközi kamatozások száma (12db)\nt: évek száma"
++ "(user által megadott)\n")
+
+years = int(input("Futamidő hossza(év)? "))
+operation = round(10000*(1+(0.08/12))
+**(12*years))
+print(str(years) + " év elteltével "
++ str(operation) + " Ft lesz a betét értéke.")
+</code></pre>
+    <p>
+      BETÉT (10.000Ft) ÉRTÉKE A FUTAMIDŐ VÉGÉN
+      <br />
+      <br />
+      Képlet: FV=C*(1+(r/m)**(mt)
+      <br /><br />
+      C: alaptőke(10.000Ft)
+      <br />
+      r: éves névleges kamatláb (8%)
+      <br />
+      m: évközi kamatozások száma (12db)
+      <br />
+      t: évek száma(user által megadott)
+    </p>
+    <p>Írj be egy számot!</p>
+    <input type="number" id="task103111" placeholder="years" />
+    <br /><br />
+    <span id="task103111text"></span>
+    <script type="text/python" id="script103111">
+      from browser import document
+
+      def show_text(e):
+          years = int(e.target.value)
+          operation = round(10000*(1+(0.08/12)) **(12*years))
+          document['task103111text'].textContent = (str(years) + " év elteltével " + str(operation) + " Ft lesz a betét értéke.")
+      document['task103111'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
+    <h2>programozási-alapfeladatok.pdf megoldások</h2>
+
+    <h3>21. feladat és a megoldásom</h3>
     <p>Írj programot, mely csak pozitív számot hajlandó beolvasni.</p>
     <pre><code class="python">number = 0
 while number >= 0:
@@ -36,10 +218,10 @@ while number >= 0:
     if number >= 0:
       print("Ez a szám: " + str(number) +
     ". Most kérek egy másik számot!")
-print ("Ezt nem vagyok hajlandó beolvasni!")
+print("Ezt nem vagyok hajlandó beolvasni!")
 </code></pre>
-    number =
-    <input type="number" id="task21" placeholder="Írj be egy számot!" />
+    <p>Írj be egy számot!</p>
+    <input type="number" id="task21" placeholder="number" />
     <br /><br />
     <span id="task21text"></span>
     <script type="text/python" id="script21">
@@ -56,18 +238,18 @@ print ("Ezt nem vagyok hajlandó beolvasni!")
 
     <hr noshade />
 
-    <h2>20. feladat és a megoldásom</h2>
+    <h3>20. feladat és a megoldásom</h3>
     <p>
       Írj programot, mely beolvassa a hatvány alapját és a kitevőt, és kiírja a
       hatványértéket!
     </p>
     <pre><code class="python">base = 2
 exponent = int(input("Írj be egy számot!"))
-print (str(base) + "^" + str(exponent)
+print(str(base) + "**" + str(exponent)
 + " = " + str(base**exponent))
 </code></pre>
-    exponent =
-    <input type="number" id="task20" placeholder="Írj be egy számot!" />
+    <p>Írj be egy számot!</p>
+    <input type="number" id="task20" placeholder="exponent" />
     <br /><br />
     <span id="task20text"></span>
 
@@ -77,13 +259,13 @@ print (str(base) + "^" + str(exponent)
       def show_text(e):
           base = 2
           exponent = int(e.target.value)
-          document['task20text'].textContent = (str(base) + "^" + str(exponent) + " = " + str(base**exponent))
+          document['task20text'].textContent = (str(base) + "**" + str(exponent) + " = " + str(base**exponent))
       document['task20'].bind('input', show_text)
     </script>
 
     <hr noshade />
 
-    <h2>19. feladat és a megoldásom</h2>
+    <h3>19. feladat és a megoldásom</h3>
     <p>
       Írj programot, mely beolvas egy pozitív egész számot, és megmondja, hogy
       tökéletes szám-e! (A tökéletes számok azok, melyek osztóinak összege
@@ -98,14 +280,14 @@ for x in range(number+1, 0, -1):
     addition += (x)
 
 if number*2 == addition:
-    print (str(number) +
+    print(str(number) +
     " egy tökéletes szám.")
 else:
-    print (str(number) +
+    print(str(number) +
     " nem egy tökéletes szám.")
 </code></pre>
-    number =
-    <input type="number" id="task19" placeholder="Írj be egy számot!" />
+    <p>Írj be egy számot!</p>
+    <input type="number" id="task19" placeholder="number" />
     <br /><br />
     <span id="task19text"></span>
 
@@ -127,7 +309,7 @@ else:
 
     <hr noshade />
 
-    <h2>18. feladat és a megoldásom</h2>
+    <h3>18. feladat és a megoldásom</h3>
     <p>
       Írj programot, mely beolvas egy pozitív egész számot, és kiírja az
       osztóinak az összegét!
@@ -140,12 +322,12 @@ for x in range(number+1, 0, -1):
   if number%(x) == 0:
     addition += (x)
 
-print ("A(z) " + str(number)
+print("A(z) " + str(number)
 + " összes osztójának összege: "
 + str(addition))
 </code></pre>
-    number =
-    <input type="number" id="task18" placeholder="Írj be egy számot!" />
+    <p>Írj be egy számot!</p>
+    <input type="number" id="task18" placeholder="number" />
     <br /><br />
     <span id="task18text"></span>
 
@@ -164,7 +346,7 @@ print ("A(z) " + str(number)
 
     <hr noshade />
 
-    <h2>17. feladat és a megoldásom</h2>
+    <h3>17. feladat és a megoldásom</h3>
     <p>
       Írj programot, mely beolvas egy pozitív egész számot, és kiírja az
       osztóinak az összegét!
@@ -176,10 +358,10 @@ text = "A(z) " + str(number)
 for x in range(number+1, 0, -1):
   if number%(x) == 0:
     text += str(x) + ", "
-print (text)
+print(text)
 </code></pre>
-    number =
-    <input type="number" id="task17" placeholder="Írj be egy számot!" />
+    <p>Írj be egy számot!</p>
+    <input type="number" id="task17" placeholder="number" />
     <br /><br />
     <span id="task17text"></span>
 
@@ -198,7 +380,7 @@ print (text)
 
     <hr noshade />
 
-    <h2>16. feladat és a megoldásom</h2>
+    <h3>16. feladat és a megoldásom</h3>
     <p>
       Írj programot, mely beolvas egy pozitív egész számot, és kiírja az egész
       számokat egymás alá a képernyőre eddig a számig!
@@ -211,7 +393,7 @@ for x in range(0, number+1, 1):
 
     <hr noshade />
 
-    <h2>15. feladat és a megoldásom</h2>
+    <h3>15. feladat és a megoldásom</h3>
     <p>
       Írj programot, mely beolvas egy pozitív egész számot, és kiírja az egész
       számokat a képernyőre eddig a számig, egymástól szóközzel elválasztva!
@@ -223,8 +405,8 @@ for x in range(0, number+1, 1):
   list += str(x) + ", "
 
 print(list)</code></pre>
-    number =
-    <input type="number" id="task15" placeholder="Írj be egy számot!" />
+    <p>Írj be egy számot!</p>
+    <input type="number" id="task15" placeholder="number" />
     <br /><br />
     <span id="task15text"></span>
 
@@ -243,12 +425,12 @@ print(list)</code></pre>
 
     <hr noshade />
 
-    <h2>7 - 14. feladat és a megoldásom</h2>
+    <h3>7 - 14. feladat és a megoldásom</h3>
     <p>Megoldás? Milyen megoldás? Nincsen ám matematika PhD-m... :D</p>
 
     <!-- <hr noshade />
 
-    <h2>7. feladat és a megoldásom</h2>
+    <h3>7. feladat és a megoldásom</h3>
     <p>Írj programot, mely beolvassa a háromszög oldalainak hosszát, és megmondja, hogy
 ilyen oldalakkal szerkeszthető-e háromszög!</p>
     <pre><code class="python">triangleSide1 = 5
@@ -284,13 +466,13 @@ else:
 
     <hr noshade />
 
-    <h2>6. feladat és a megoldásom</h2>
+    <h3>6. feladat és a megoldásom</h3>
     <p>
       Írj programot, mely beolvas három egész számot, és kiírja a képernyőre a
       legkisebbet!
     </p>
     <pre><code class="python">numbers = [-7, 0, -999]
-print ("A legnagyobb szám a ", max(numbers),"." )</code></pre>
+print("A legnagyobb szám a ", max(numbers),"." )</code></pre>
     <button id="button6">Futtatás</button>
     <p id="task6"></p>
     <script type="text/python" id="script6">
@@ -306,13 +488,13 @@ print ("A legnagyobb szám a ", max(numbers),"." )</code></pre>
 
     <hr noshade />
 
-    <h2>5. feladat és a megoldásom</h2>
+    <h3>5. feladat és a megoldásom</h3>
     <p>
       Írj programot, mely beolvas két egész számot, és kiírja a képernyőre a
       nagyobbikat!
     </p>
     <pre><code class="python">numbers = [21, -7, 69]
-print ("A legkisebb szám a ", min(numbers),"." )</code></pre>
+print("A legkisebb szám a ", min(numbers),"." )</code></pre>
     <button id="button5">Futtatás</button>
     <p id="task5"></p>
     <script type="text/python" id="script5">
@@ -328,7 +510,7 @@ print ("A legkisebb szám a ", min(numbers),"." )</code></pre>
 
     <hr noshade />
 
-    <h2>4. feladat és a megoldásom</h2>
+    <h3>4. feladat és a megoldásom</h3>
     <p>
       Írj programot, mely beolvas két számot, majd kiírja: a. az összegüket; b.
       különbségüket; c. szorzatukat; d. hányadosukat, ha lehet!
@@ -337,8 +519,8 @@ print ("A legkisebb szám a ", min(numbers),"." )</code></pre>
 number2 = int(input("Írj be egy számot!"))
 print(number+number2, number-number2,
 number*number2, number/number2)</code></pre>
-    number2 =
-    <input type="number" id="task4" placeholder="Írj be egy számot!" />
+    <p>Írj be egy számot!</p>
+    <input type="number" id="task4" placeholder="number2" />
     <br /><br />
     <span id="task4text"></span>
 
@@ -355,12 +537,12 @@ number*number2, number/number2)</code></pre>
 
     <hr noshade />
 
-    <h2>3. feladat és a megoldásom</h2>
+    <h3>3. feladat és a megoldásom</h3>
     <p>Írj programot, mely beolvas egy számot, majd kiírja a kétszeresét!</p>
     <pre><code class="python">number = int(input("Írj be egy számot!"))
-print (number * 2)</code></pre>
-    number =
-    <input type="number" id="task3" placeholder="Írj be egy számot!" />
+print(number * 2)</code></pre>
+    <p>Írj be egy számot!</p>
+    <input type="number" id="task3" placeholder="number" />
     <br /><br />
     <span id="task3text"></span>
 
@@ -376,13 +558,13 @@ print (number * 2)</code></pre>
 
     <hr noshade />
 
-    <h2>2. feladat és a megoldásom</h2>
+    <h3>2. feladat és a megoldásom</h3>
     <p>Írj programot, mely beolvassa a felhasználó nevét, majd köszön neki!</p>
     <pre><code class="python">name = input("Add meg a neved!")
 greeting = "Hali, "
-print (greeting + name + "!")</code></pre>
-    name =
-    <input type="text" id="task2" placeholder="Add meg a neved!" />
+print(greeting + name + "!")</code></pre>
+    <p>Add meg a neved!</p>
+    <input type="text" id="task2" placeholder="name" />
     <br /><br />
     <span id="task2text"></span>
 
@@ -400,9 +582,9 @@ print (greeting + name + "!")</code></pre>
 
     <hr noshade />
 
-    <h2>1. feladat és a megoldásom</h2>
+    <h3>1. feladat és a megoldásom</h3>
     <p>Írj programot, mely kiírja a képernyőre, hogy ”Hello world!”!</p>
-    <pre><code class="python">print ("Csövi, Világ!")</code></pre>
+    <pre><code class="python">print("Csövi, Világ!")</code></pre>
     <button id="button1">Futtatás</button>
     <p id="task1"></p>
     <script type="text/python" id="script1">
@@ -433,6 +615,20 @@ print (greeting + name + "!")</code></pre>
       hljs.highlightAll();
     </script>
     <script>
+      document
+        .getElementById('button103151')
+        .addEventListener('click', function () {
+          document.getElementById('button103151').style.display = 'none';
+          document.getElementById('task103151').innerHTML =
+            '1. képlet eredménye: 2.5 <br/> 2. képlet eredménye: 6.3 <br/> 3. képlet eredménye: 1625';
+        });
+      document
+        .getElementById('button103112')
+        .addEventListener('click', function () {
+          document.getElementById('button103112').style.display = 'none';
+          document.getElementById('task103112').innerHTML =
+            '1 <br/> 4 <br/> 3 <br/> 12 <br/> 0 <br/> 0 <br/> <span class="red"> Traceback (most recent call last): <br/> File "okj.harka.com\\python", line 7, in &lt;module&gt; <br/> print(7 % 0) <br/> ZeroDivisionError: integer division or modulo by zero </span> <br/> <br/> <span class="bold">- Mi történt az utolsó példánál, és miért?</span> <br/>- A 7. sorra hibát ír a konzol, mert nem lehet 0-val osztani.';
+        });
       document
         .getElementById('button16')
         .addEventListener('click', function () {
