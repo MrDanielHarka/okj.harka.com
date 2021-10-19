@@ -234,9 +234,7 @@ Ezt pedig nevezd át arra, amire csak szeretnéd és rakj bele bármilyen tetsz�
 
 Kép a 4, 5 és 6-os ponthoz
 
-![Linkeles](img/linkeles.jpg)
-
-7. Nagyon opcionális: Ha szeretnéd, hogy gyorsan töltsenek be az oldalaid, akkor egy `compress image online` vagy `online image compressor` szolgáltatás segítségével tömörítheted a képeket.
+![Linkeles](img/linkeles.jpg) 7. Nagyon opcionális: Ha szeretnéd, hogy gyorsan töltsenek be az oldalaid, akkor egy `compress image online` vagy `online image compressor` szolgáltatás segítségével tömörítheted a képeket.
 
 ## 6. Gratuláció!
 
