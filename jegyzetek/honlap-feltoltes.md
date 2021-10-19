@@ -23,6 +23,17 @@ szerverünkön. :)
 Az alábbi honlapok mind ezzel (vagy nagyon hasonló) folyamattal lettek publikálva.
 
 - <a
+         href="https://blankaharka.github.io"
+         target="_blank"
+         rel="noreferrer noopener nofollow"
+         >blankaharka.github.io</a
+       > (<a
+         href="https://github.com/BlankaHarka/blankaharka.github.io"
+         target="_blank"
+         rel="noreferrer noopener nofollow"
+         >kód</a
+       >)
+- <a
          href="https://noemikadas.github.io"
          target="_blank"
          rel="noreferrer noopener nofollow"
@@ -74,7 +85,7 @@ Az alábbi honlapok mind ezzel (vagy nagyon hasonló) folyamattal lettek publik�
 
 Küldd el, ha kész a tiéd is és felrakom ide. :)
 
-## 1. Feltöltendő honlap elkészítése
+## 1. Feltöltendő honlap elkészítése | <a href="https://youtu.be/EXcyOLS5WFg?list=PLSSoSC25DDhUFOChkIxvwGmSakaVg8g0D" target="_blank" rel="noreferrer noopener nofollow">Youtube Videó</a> (11 perc)
 
 1.  Hozz létre egy új mappát amibe teszed a honlap fájljait.
 2.  Opcionális: Javaslom a `keresztnevedvezetekneved.github.io` mappanevet, mert ez lehet egy lehetséges név a honlapod publikálására.
@@ -83,7 +94,7 @@ Küldd el, ha kész a tiéd is és felrakom ide. :)
 5.  Linkeld össze a kettőt.
 6.  Készítsd el a honlapodat.
 
-## 2. GitHub felhasználó létrehozása
+## 2. GitHub felhasználó létrehozása | <a href="https://youtu.be/stmiEjGDrVU?list=PLSSoSC25DDhUFOChkIxvwGmSakaVg8g0D" target="_blank" rel="noreferrer noopener nofollow">Youtube Videó</a> (3 perc)
 
 Ha ez már megvan, akkor ugorj a következő alcímhez!
 
@@ -105,8 +116,12 @@ Ha ez már megvan, akkor ugorj a következő alcímhez!
 8. Katt a legvilágosabb 3, 4 vagy 5 ágú, spirálos képre.
 9. Katt a `Create account`-ra.
 10. Nézd meg a mailed és Ctr+V-zd vagy írd be a kapott számot.
+11. "How many team members will be working with you?" Mindegy, hogy mire nyomsz.
+12. "Are you a student or a teacher?" Itt is mindegy, aztán katt `Continue`.
+13. "What specific features are you interested in using?" Itt is mindegy, aztán `Continue`.
+14. Következő oldal katt `Continue for free`.
 
-## 3. Repository létrehozása és honlap feltöltése
+## 3. Repository létrehozása és honlap feltöltése | <a href="https://youtu.be/orpcugAp9hY?list=PLSSoSC25DDhUFOChkIxvwGmSakaVg8g0D" target="_blank" rel="noreferrer noopener nofollow">Youtube Videó</a> (4 perc)
 
 1.  Jelentkezz be GitHub-ra. (<a
           href="https://github.com/login"
@@ -144,13 +159,13 @@ Ha ez már megvan, akkor ugorj a következő alcímhez!
 16. Ha az előző pontokat helyesen és maradéktalanul végigcsináltad, akkor 2-10 percen belül megjelenik a már ténylegesen "Ez az első honlapom!" bármelyik böngészőben.
 17. Kattints a honlapod linkjére a GitHub-on belül vagy írd be bármelyik böngésző címsorába a következő módon: `aMegadottFelhasznaloNeved.github.io` Voilà!
 
-## 4. Már feltöltött honlap módosítása
+## 4. Már feltöltött honlap módosítása | <a href="https://youtu.be/kg3RPKgPLHw?list=PLSSoSC25DDhUFOChkIxvwGmSakaVg8g0D" target="_blank" rel="noreferrer noopener nofollow">Youtube Videó</a> (2 perc)
 
 1. Megnyitod azt a repo-t, ahova feltöltötted a honlapodat.
 2. Rákattintasz arra a (html, css, js, stb.) fájlra, amit módosítanál.
 3. A jobb fenti sarokban a ceruzára kattintva módosítani tudod és be tudod másolni az új fájl kódját vagy a kukára kattintva törölheted és feltöltheted az újat.
 
-## 5. Ötletek egy fullos honlap elkészítéséhez
+## 5. Ötletek egy teljes honlap elkészítéséhez | <a href="https://youtu.be/vW-P-YdAkZQ?list=PLSSoSC25DDhUFOChkIxvwGmSakaVg8g0D" target="_blank" rel="noreferrer noopener nofollow">Youtube Videó</a> (31 perc)
 
 > Amiket honlapokat használok a példákban **nem** azért vannak, hogy pont olyanokat csinálj, mint amilyenek azok, hanem mert tudom, hogy azoknak minimalista és könnyen érthető a kódja. Nyugodtan csinálj azoknál jobbakat, szebbeket, funkcionálisabbakat és egyedibbeket. :)
 
@@ -201,7 +216,7 @@ A fájl struktúra valahogyan így nézzen ki:
    <a href="https://daniel.harka.com/work" target="_blank">daniel.harka.com/work</a> oldalhoz.
 
 2. Itt csak azokat a gyakorlásokat/feladatokat linkeld be, amikre a legbüszkébb vagy és szívesen megmutatnád valakinek vagy amiket használnál referenciamunkaként álláskereséskor.
-3. Linkeléskor "lépj be" az okj mappába és onnan linkeld be a html fájlokat. Valahogy így: `<a href="okj/gyakorlas1" target="_blank" >Egyik projektem</a>`
+3. Linkeléskor "lépj be" az okj mappába és onnan linkeld be a html fájlokat. Valahogy így: `<a href="okj/practice1" target="_blank" >Egyik projektem</a>`
 4. Legfelül legyen az, amelyikre a legbüszkébb vagy, majd pedig 'csökkenő sorrendben" a többi.
 5. Ha esetleg még nincsen olyan oldal, amire nagyon büszke lennél, párat akkor is válassz ki az okj-s oldaladról és linkelj azokhoz itt.
 
@@ -236,7 +251,7 @@ Kép a 4, 5 és 6-os ponthoz
 
 ![Linkeles](img/linkeles.jpg) 7. Nagyon opcionális: Ha szeretnéd, hogy gyorsan töltsenek be az oldalaid, akkor egy `compress image online` vagy `online image compressor` szolgáltatás segítségével tömörítheted a képeket.
 
-## 6. Gratuláció!
+## 6. Gratuláció! | <a href="https://youtu.be/1Bix44C1EzY?list=PLSSoSC25DDhUFOChkIxvwGmSakaVg8g0D" target="_blank" rel="noreferrer noopener nofollow">Youtube Videó</a> (1 perc)
 
 Nagyon gratulálok és elképesztően büszke vagyok rád, amennyiben ezt úgy olvasod, hogy végigcsináltad az egészet. Ha csak idegörgettél, akkor nyomás vissza az elejére! :D
 
