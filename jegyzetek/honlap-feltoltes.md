@@ -110,16 +110,7 @@ Ha ez már megvan, akkor ugorj a következő alcímhez!
 5.  **Nem muszáj nagybetűnek lennie. Később viszont általában így utalok a felhasználónévre, mert így könnyen kiolvasható/értelmezhető.**
 6.  "Would you like to receive product updates and announcements via email? Type "y" for yes or "n" for no." Itt nyomj egy `n`-t.
 
-![Reg](img/githubreg.jpg)
-
-7. Katt a `Start puzzle`-re.
-8. Katt a legvilágosabb 3, 4 vagy 5 ágú, spirálos képre.
-9. Katt a `Create account`-ra.
-10. Nézd meg a mailed és Ctr+V-zd vagy írd be a kapott számot.
-11. "How many team members will be working with you?" Mindegy, hogy mire nyomsz.
-12. "Are you a student or a teacher?" Itt is mindegy, aztán katt `Continue`.
-13. "What specific features are you interested in using?" Itt is mindegy, aztán `Continue`.
-14. Következő oldal katt `Continue for free`.
+![Reg](img/githubreg.jpg) 7. Katt a `Start puzzle`-re. 8. Katt a legvilágosabb 3, 4 vagy 5 ágú, spirálos képre. 9. Katt a `Create account`-ra. 10. Nézd meg a mailed és Ctr+V-zd vagy írd be a kapott számot. 11. "How many team members will be working with you?" Mindegy, hogy mire nyomsz. 12. "Are you a student or a teacher?" Itt is mindegy, aztán katt `Continue`. 13. "What specific features are you interested in using?" Itt is mindegy, aztán `Continue`. 14. Következő oldal katt `Continue for free`.
 
 ## 3. Repository létrehozása és honlap feltöltése | <a href="https://youtu.be/orpcugAp9hY?list=PLSSoSC25DDhUFOChkIxvwGmSakaVg8g0D" target="_blank" rel="noreferrer noopener nofollow">Youtube Videó</a> (4 perc)
 
@@ -200,11 +191,10 @@ Ha ez már megvan, akkor ugorj a következő alcímhez!
 
 A fájl struktúra valahogyan így nézzen ki:
 
-![Struktura](img/file-struktura.jpg)
-
-2. Az okj/index.html legyen egy linkgyűjtemény oldal, hasonlóan a <a
+![Struktura](img/file-struktura.jpg) 2. Az okj/index.html legyen egy linkgyűjtemény oldal, hasonlóan a <a
    href="https://okj.harka.com"
    target="_blank"> okj.harka.com</a> oldalhoz.
+
 1. Linkeld be az összes megcsinált webfejlesztéses házidat.
 1. A linkek nyíljanak meg új lapon/fülön/tabon, nem a jelenlegi nézetben.
    > Ez azért fontos, mert így ezeket az oldalakat nem kell visszalinkelni az okj/index.html-hez, hanem az tab/fül bezárásával, azonnal visszakerülnek a látogatók az okj.html oldalra.
