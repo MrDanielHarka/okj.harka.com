@@ -1,0 +1,48 @@
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.purpleText {
+  color: rgb(168, 56, 216);
+}
+
+.purpleBg {
+  background-color: DarkViolet;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+.icon {
+  width: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  font-weight: bold;
+  background-color: DarkViolet;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem transparent;
+}
+
+h3 + a:link,
+h3 + a:visited {
+  color: DarkViolet;
+  text-decoration: none;
+  font-weight: bold;
+}
