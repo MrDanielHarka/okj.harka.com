@@ -8,8 +8,11 @@ body::before {
   font-weight: bold;
 }
 
-.purpleText {
+.purpleText,
+a:link,
+a:hover {
   color: rgb(168, 56, 216);
+  font-weight: bold;
 }
 
 .purpleBg {
