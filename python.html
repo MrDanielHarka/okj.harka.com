@@ -71,6 +71,56 @@ operation3(a, b)</code></pre>
 
     <hr noshade />
 
+    <h3>10.3.13-14. feladat és a megoldásom</h3>
+    <p>
+      Írj függvényt az alapműveletek végrehajtására, mind a négyre egyet-egyet.
+      Két számmal számolj, a számokat kérd be a felhasználótól! Figyelj a
+      konvertálásra!
+    </p>
+    <pre><code class="python">def add(number, number2):
+  solution = number + number2
+  return(solution)
+
+def subtract(number, number2):
+  solution = number - number2
+  return(solution)
+
+def multiply(number, number2):
+  solution = number * number2
+  return(solution)
+
+def divide(number, number2):
+  solution = number / number2
+  return(solution)
+
+number = 100
+number2 = int(input("Kérek egy számot! "))
+
+print(str(number)+ "+" + str(number2) + "="
++ str(add(number, number2)) + ", " + str(number)
++ "-" + str(number2) + "="
++ str(subtract(number, number2)) + ", "
++ str(number) + "*" + str(number2) + "="
++ str(multiply(number, number2)) + ", "
++ str(number)+ "/" + str(number2) + "="
++ str(divide(number, number2)))
+</code></pre>
+    <p>Kérek egy számot!</p>
+    <input type="number" id="task10314" placeholder="number2" />
+    <br /><br />
+    <span id="task10314text"></span>
+    <script type="text/python" id="script10314">
+      from browser import document
+
+      def show_text(e):
+        number = 100
+        number2 = int(e.target.value)
+        document['task10314text'].textContent = (str(number) + "+" + str(number2) + "=" + str(number + number2) + ", " + str(number)+ "-" + str(number2) + "=" + str(number-number2) + ", " + str(number)+ "*" + str(number2) + "=" + str(number*number2) + ", " + str(number)+ "/" + str(number2) + "=" + str(number/number2))
+      document['task10314'].bind('input', show_text)
+    </script>
+
+    <hr noshade />
+
     <h3>10.3.11 / 4. feladat és a megoldásom</h3>
     <p>
       Kérd be egy négyzet oldalának értékét és számold ki a területét és a
