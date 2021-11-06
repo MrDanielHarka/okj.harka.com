@@ -522,28 +522,6 @@ else:
       Írj programot, mely beolvas három egész számot, és kiírja a képernyőre a
       legkisebbet!
     </p>
-    <pre><code class="python">numbers = [-7, 0, -999]
-print("A legnagyobb szám a ", max(numbers),"." )</code></pre>
-    <button id="button6">Futtatás</button>
-    <p id="task6"></p>
-    <script type="text/python" id="script6">
-      from browser import document
-
-      def show(e):
-          numbers = [-7, 0, -999]
-          document['task6'] <= ("A legnagyobb szám a ", max(numbers),"." )
-
-
-      document['button6'].bind('click', show)
-    </script>
-
-    <hr noshade />
-
-    <h3>5. feladat és a megoldásom</h3>
-    <p>
-      Írj programot, mely beolvas két egész számot, és kiírja a képernyőre a
-      nagyobbikat!
-    </p>
     <pre><code class="python">numbers = [21, -7, 69]
 print("A legkisebb szám a ", min(numbers),"." )</code></pre>
     <button id="button5">Futtatás</button>
@@ -557,6 +535,28 @@ print("A legkisebb szám a ", min(numbers),"." )</code></pre>
 
 
       document['button5'].bind('click', show)
+    </script>
+
+    <hr noshade />
+
+    <h3>5. feladat és a megoldásom</h3>
+    <p>
+      Írj programot, mely beolvas három egész számot, és kiírja a képernyőre a
+      legnagyobbat!
+    </p>
+    <pre><code class="python">numbers = [-7, 0, -999]
+print("A legnagyobb szám a ", max(numbers),"." )</code></pre>
+    <button id="button6">Futtatás</button>
+    <p id="task6"></p>
+    <script type="text/python" id="script6">
+      from browser import document
+
+      def show(e):
+          numbers = [-7, 0, -999]
+          document['task6'] <= ("A legnagyobb szám a ", max(numbers),"." )
+
+
+      document['button6'].bind('click', show)
     </script>
 
     <hr noshade />
