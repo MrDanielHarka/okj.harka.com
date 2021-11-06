@@ -283,7 +283,7 @@ print("Ezt nem vagyok hajlandó beolvasni!")
           if number >= 0:
             document['task21text'].textContent =("Ez a szám: " + str(number) + ". Most kérek egy másik számot!")
           else:
-            document['task21text'].textContent = ("Ezt a számot nem vagyok hajlandó beolvasni!")
+            document['task21text'].textContent = ("Ezt nem vagyok hajlandó beolvasni!")
       document['task21'].bind('input', show_text)
     </script>
 
@@ -367,15 +367,15 @@ else:
     </p>
 
     <pre><code class="python">number = int(input("Írj be egy számot!"))
-addition = 0
+sum = 0
 
 for x in range(number+1, 0, -1):
   if number%(x) == 0:
-    addition += (x)
+    sum += (x)
 
 print("A(z) " + str(number)
 + " összes osztójának összege: "
-+ str(addition))
++ str(sum))
 </code></pre>
     <p>Írj be egy számot!</p>
     <input type="number" id="task18" placeholder="number" />
@@ -387,11 +387,11 @@ print("A(z) " + str(number)
 
       def show_text(e):
           number = int(e.target.value)
-          addition = 0
+          sum = 0
           for x in range(number+1, 0, -1):
             if number%(x) == 0:
-              addition += (x)
-              document['task18text'].textContent = ("A(z) " + str(number) + " összes osztójának összege: " + str(addition))
+              sum += (x)
+              document['task18text'].textContent = ("A(z) " + str(number) + " összes osztójának összege: " + str(sum))
       document['task18'].bind('input', show_text)
     </script>
 
