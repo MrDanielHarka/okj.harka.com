@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Diákhitelből Állampapír | okj.harka.com</title>
+
+    <style>
+      .helpButton {
+        color: green;
+        cursor: pointer;
+        display: inline;
+      }
+
+      .helpText {
+        display: none;
+        font-style: italic;
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .bordered,
+      summary + p {
+        border: 1px solid black;
+        padding: 5px;
+        max-width: 400px;
+      }
+
+      details {
+        padding: 7px;
+      }
+
+      input:checked + #helpText,
+      input:checked + #helpText2,
+      input:checked + #helpText3,
+      input:checked + #helpText4,
+      input:checked + #helpText5,
+      input:checked + #helpText6 {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Diákhitelből MÁP+</h1>
+    <p>
+      Kis JavaScript gyakorlás:
+      <br />
+      Diákhitel berakva állampapírba kalkulátor.
+    </p>
+
+    <h2>Mennyi az annyi?</h2>
+
+    <label for="educationDuration">Képzés hossza?</label>
+
+    <br />
+    <select name="educationDuration" id="educationDuration" tabindex="1">
+      <option value="1">1 hónap</option>
+      <option value="2">2 hónap</option>
+      <option value="3">3 hónap</option>
+      <option value="4">4 hónap</option>
+      <option value="5">5 hónap</option>
+      <option value="6">6 hónap</option>
+      <option value="7">7 hónap</option>
+      <option value="8" selected>8 hónap</option>
+      <option value="9">9 hónap</option>
+      <option value="10">10 hónap</option>
+      <option value="11">11 hónap</option>
+      <option value="12">12 hónap</option>
+      <option value="13">13 hónap</option>
+      <option value="14">14 hónap</option>
+      <option value="15">15 hónap</option>
+      <option value="16">16 hónap</option>
+      <option value="17">17 hónap</option>
+      <option value="18">18 hónap</option>
+      <option value="19">19 hónap</option>
+      <option value="20">20 hónap</option>
+      <option value="21">21 hónap</option>
+      <option value="22">22 hónap</option>
+      <option value="23">23 hónap</option>
+      <option value="24">24 hónap</option>
+    </select>
+    <label for="check" class="helpButton" tabindex="2">(?)</label>
+    <input id="check" type="checkbox" style="display: none" />
+    <div id="helpText" class="helpText bordered">
+      Képzés tartama kezdéstől a befejezésig. Ennyi alkalommal utal hitelt az
+      intézet.
+    </div>
+    <br />
+    <label for="monthlyLoan">Igényelt havi hitel?</label>
+    <br />
+    <select name="monthlyLoan" id="monthlyLoan" tabindex="3">
+      <option value="21000">21.000 Ft</option>
+      <option value="25000">25.000 Ft</option>
+      <option value="30000">30.000 Ft</option>
+      <option value="40000">40.000 Ft</option>
+      <option value="50000">50.000 Ft</option>
+      <option value="60000">60.000 Ft</option>
+      <option value="70000">70.000 Ft</option>
+      <option value="80000">80.000 Ft</option>
+      <option value="90000">90.000 Ft</option>
+      <option value="100000" selected>100.000 Ft</option>
+      <option value="110000">110.000 Ft</option>
+      <option value="120000">120.000 Ft</option>
+      <option value="130000">130.000 Ft</option>
+      <option value="140000">140.000 Ft</option>
+      <option value="150000">150.000 Ft</option>
+    </select>
+    <label for="check2" class="helpButton" tabindex="4">(?)</label>
+    <input id="check2" type="checkbox" style="display: none" />
+    <div id="helpText2" class="helpText bordered">
+      Ekkora összeget utal a hitelintézet havonta, amíg tart a képzés.
+    </div>
+    <br />
+    <label for="loanDuration">Hitel futamideje?</label>
+    <br />
+    <select name="loanDuration" id="loanDuration" tabindex="5">
+      <option value="5">5 év</option>
+      <option value="10">10 év</option>
+    </select>
+    <label for="check3" class="helpButton" tabindex="6">(?)</label>
+    <input id="check3" type="checkbox" style="display: none" />
+    <div id="helpText3" class="helpText bordered">
+      Hitel visszafizetésének időtartama.
+      <br />
+      Rövidebb futamidő: Kevesebb kamat, több havi törlesztő.
+      <br />
+      Hosszabb futamidő: Több kamat, kevesebb havi törlesztő.
+    </div>
+    <br />
+
+    <label for="loanInterestPercent">Hitel éves kamata? (%)</label>
+    <br />
+    <input id="loanInterestPercent" type="number" value="1.99" tabindex="7" />
+    <label for="check4" class="helpButton" tabindex="8">(?)</label>
+    <input id="check4" type="checkbox" style="display: none" />
+    <div id="helpText4" class="helpText bordered">
+      Az igényelt hitelre fizetendő kamat mértéke.
+      <br />
+      Az alapértelmezett érték 2021.11.08. dátumon lett rögzítve.
+      <br />
+      Az aktuális érték
+      <a
+        href="https://diakhitel.hu/kepzesi-hitel1-erdeklodes"
+        target="_blank"
+        rel="noreferrer noopener nofollow"
+        >itt</a
+      >
+      van feltüntetve.
+    </div>
+    <br />
+
+    <label for="investDuration">Hitelösszeg Állampapírban?</label>
+    <br />
+    <select name="investDuration" id="investDuration" tabindex="9">
+      <option value="5">5 évig</option>
+      <option value="10">10 évig</option>
+      <option value="15">15 évig</option>
+      <option value="20">20 évig</option>
+      <option value="25">25 évig</option>
+      <option value="30">30 évig</option>
+      <option value="35">35 évig</option>
+      <option value="40">40 évig</option>
+    </select>
+    <label for="check5" class="helpButton" tabindex="10">(?)</label>
+    <input id="check5" type="checkbox" style="display: none" />
+    <div id="helpText5" class="helpText bordered">
+      Az igényelt hitelösszeg ennyi ideig marad MÁP+ Állampapírban.
+      <br />
+      Úgy számol a kalkulátor, hogy a megadott számú évig 5 évente újra vissza
+      van forgatva a tőke és az állampapír hozama állampapírba.
+    </div>
+    <br />
+
+    <label for="investYieldPercent">MÁP+ ötéves kamata? (%)</label>
+    <br />
+    <input id="investYieldPercent" type="number" value="27.35" tabindex="11" />
+    <label for="check6" class="helpButton" tabindex="12">(?)</label>
+    <input id="check6" type="checkbox" style="display: none" />
+    <div id="helpText6" class="helpText bordered">
+      Az állampapírban tartott összegre kapott kamat mértéke.
+      <br />
+      Az alapértelmezett érték 2021.11.08. dátumon lett rögzítve.
+      <br />
+      Az aktuális érték
+      <a
+        href="https://www.allampapir.hu/allampapirok/MAPP"
+        target="_blank"
+        rel="noreferrer noopener nofollow"
+        >itt</a
+      >
+      van feltüntetve.
+    </div>
+    <br />
+    <button id="calculate" tabindex="13">Számolj!</button>
+    <br />
+    <br />
+    <div id="loanText"></div>
+    <div id="repaymentText"></div>
+    <div id="interestText"></div>
+    <div id="yieldText"></div>
+    <b id="earningText"></b>
+
+    <hr />
+    <h2>Ez mi ez?</h2>
+    <details open>
+      <summary>Dehát, akkor ez egy pénzügyi tanács(adás)?</summary>
+      <p>
+        Nem, ez nagyon NEM az! Magamnak csináltam egy kis számolót, hogy hogyan
+        nézne ki, ha fognám magam, felvennék Diákhitelt és MÁP+ Állampapírba
+        dugnám.
+      </p>
+    </details>
+    <details>
+      <summary>Dehát, ez mindegyik Diákhitellel működik?</summary>
+      <p>
+        Ez a kalkulátor a Képzési Hitel1 Diákhitelhez íródott, a többi
+        konstrukciót nem tanulmányoztam át. Úgyhogy csak ennek a helyességéért
+        vállalok felelősséget.
+      </p>
+    </details>
+    <details>
+      <summary>
+        Dehát, miért növekszik meg jelentősen, már-már aránytalanul a nyereség
+        mértéke 5 évente?
+      </summary>
+      <p>Kamatos kamatnak nevezik. Jó mi? ($_$)/"</p>
+    </details>
+    <details>
+      <summary>Dehát, nem butaság hitelt állampapírba tenni?</summary>
+      <p>
+        A két konstrukció kamatának a különbsége a mérvadó. Aztán azt mindenki
+        maga dönti el, hogy megéri-e neki.
+      </p>
+    </details>
+    <details>
+      <summary>
+        Dehát, ha 5 vagy 10 évre veszek fel hitelt, akkor miért lehet hosszabb
+        ideig is bent tartani a tételeket állampapírban és miért lehet 10+
+        éveket is kiválasztani a "Hitelösszeg Állampapírban?" menüben?
+      </summary>
+      <p>
+        A kettő futamidőnek nincsen köze egymáshoz. Azért lehet az Állampapír
+        periódusa hosszabb, mint a hitel futamideje, mert természetesen az
+        összeg maradhat állampapírban akkor is, ha a hitelt már törlesztettük.
+        Nem kell aktív hitellel rendelkezni és nem kell újabb hitelt felvenni,
+        ahhoz, hogy a már felvett összeg bentmaradhasson állampapírban.
+      </p>
+    </details>
+    <details>
+      <summary>
+        Dehát, évi 2x illetve havonta van diákhitel kifizetés. Ezzel hogyan
+        számol a kalkulátor?
+      </summary>
+      <p>
+        Egyszerűen. Nincsen jelentősége, hogy milyen gyakoriak a
+        hitelfolyósítások. A végösszeg ugyanakkora lesz. Mivel a MÁP+ Állampapír
+        futamideje fix 5 éves, így nincsen jelentősége, hogy több alkalommal,
+        külön vannak berakva a tételek vagy pedig egy nagyobb összegben.
+        Ugyanúgy 5 év múlva jár le minden betett összeg kamatperiódusa. Ha több
+        tételben utalunk, akkor több összegben is van a visszafizetés.
+      </p>
+    </details>
+    <details>
+      <summary>
+        Dehát, miért csak minden 5. évet lehet kiválasztani a hitelperiódusnál?
+      </summary>
+      <p>
+        Csupán logikai oka van. Nem lenne túl logikus 3 évre felvenni hitelt és
+        az összeget 5 évre betenni Állampapírba, ahogyan az sem, ha 7 évre
+        vennénk fel hitelt és csak 5 évre tennénk be Állampapírba.
+      </p>
+    </details>
+    <details>
+      <summary>
+        Dehát, miért csak minden 5. évet lehet kiválasztani az állampapírnál?
+      </summary>
+      <p>
+        Azon egyszerű okból, hogy 5 éves futamideje van a MÁP+ Állampapírnak.
+        Évente ki lehet venni a betett tételeket, nem kell bent tartani 5 évig,
+        de ha a legtöbbet szeretné kihozni belőle az ember, akkor érdemes
+        benthagyni az egész összeget az 5 éves futamidő végéig.
+      </p>
+    </details>
+    <details>
+      <summary>Dehát, milyen kamatokkal számol a program?</summary>
+      <p>
+        A MÁP+ Állampapírt
+        <a
+          href="https://www.allampapir.hu/allampapirok/MAPP"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >ezen</a
+        >, a Diákhitelt pedig
+        <a
+          href="https://diakhitel.hu/kepzesi-hitel1-erdeklodes"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >ezen</a
+        >
+        a linken levő kamattal számolja. Az alapértelmezett értékek 2021.11.08.
+        dátumon lettek rögzítve.
+      </p>
+    </details>
+    <details>
+      <summary>
+        Dehát, az állampapírra adott kamat mértéke nem változik?
+      </summary>
+      <p>
+        Változhat, bár nem valószínű, hogy jelentős mértékben fog. Nem érdekük,
+        hogy ügyfeleket veszítsenek vagy, hogy újakat ne szerezzenek.
+      </p>
+    </details>
+    <details>
+      <summary>Dehát, a diákhitelre fizetett kamat nem változik?</summary>
+      <p>
+        Változhat, bár nem valószínű, hogy jelentős mértékben fog. Nem érdekük,
+        hogy ügyfeleket veszítsenek vagy, hogy újakat ne szerezzenek.
+      </p>
+    </details>
+    <details>
+      <summary>
+        Dehát, a havi törlesztő magasabbra jön ki, mint a Diákhitel saját
+        honlapján. Ez hogyan lehetséges?
+      </summary>
+      <p>
+        A kisbetűs részeket érdemes mindig elolvasni. Ez a szöveg szerepel a
+        honlapjukon: "A hitelkalkulátor segítségével kiszámolt törlesztési
+        adatok tájékoztató jellegűek." Valószínűleg az ő kalkulátoruk egy
+        korábbi kamattal számol vagy beleszámol valami kedvezményt. Az én
+        kalkulátorom mindenesetre a szerződésben feltüntetett számokhoz
+        igazodik.
+      </p>
+    </details>
+
+    <hr />
+    <center>
+      Forráskód:
+      <a
+        href="https://github.com/MrDanielHarka/okj.harka.com/blob/main/diakhitel-allampapir-kalkulator.html"
+        target="_blank"
+        rel="noreferrer noopener nofollow"
+        >GitHub</a
+      >
+    </center>
+
+    <script>
+      'use strict';
+
+      let educationDuration,
+        monthlyLoan,
+        loanDuration,
+        loanInterestPercent,
+        loanInterest,
+        loanTotal,
+        investDuration,
+        investYieldPercent,
+        investYield,
+        loanInterestTotal,
+        investInterestTotal,
+        earningTotal;
+
+      document
+        .querySelector('#calculate')
+        .addEventListener('click', function () {
+          (function () {
+            let select = document.getElementById('educationDuration');
+            educationDuration = select.options[select.selectedIndex].value;
+          })();
+
+          (function () {
+            let select = document.getElementById('monthlyLoan');
+            monthlyLoan = select.options[select.selectedIndex].value;
+          })();
+
+          (function () {
+            let select = document.getElementById('loanDuration');
+            loanDuration = select.options[select.selectedIndex].value;
+          })();
+
+          loanInterestPercent = document.getElementById(
+            'loanInterestPercent'
+          ).value;
+
+          (function () {
+            let select = document.getElementById('investDuration');
+            investDuration = select.options[select.selectedIndex].value;
+          })();
+
+          investYieldPercent =
+            document.getElementById('investYieldPercent').value;
+
+          loanInterest = (loanInterestPercent / 100 + 1) ** loanDuration;
+          loanTotal = educationDuration * monthlyLoan;
+          loanInterestTotal = loanTotal * loanInterest - loanTotal;
+          investYield = (investYieldPercent / 100 + 1) ** (investDuration / 5);
+          investInterestTotal = loanTotal * investYield - loanTotal;
+          earningTotal = investInterestTotal - loanInterestTotal;
+
+          document.getElementById(
+            'loanText'
+          ).textContent = `Felvett hitel összege: ${new Intl.NumberFormat(
+            'hu-HU'
+          ).format(loanTotal)} Ft`;
+
+          document.getElementById(
+            'repaymentText'
+          ).textContent = `Havi hitel törlesztő: ${new Intl.NumberFormat(
+            'hu-HU'
+          ).format(
+            Math.round((loanTotal * loanInterest) / loanDuration / 12)
+          )} Ft`;
+
+          document.getElementById(
+            'interestText'
+          ).textContent = `Hitelre fizetett kamat: ${new Intl.NumberFormat(
+            'hu-HU'
+          ).format(Math.round(loanInterestTotal))} Ft`;
+
+          document.getElementById(
+            'yieldText'
+          ).textContent = `Állampapír hozam: ${new Intl.NumberFormat(
+            'hu-HU'
+          ).format(Math.round(investInterestTotal))} Ft`;
+
+          document.getElementById(
+            'earningText'
+          ).textContent = `Nyereség: ${new Intl.NumberFormat('hu-HU').format(
+            Math.round(earningTotal)
+          )} Ft`;
+        });
+    </script>
+  </body>
+</html>
