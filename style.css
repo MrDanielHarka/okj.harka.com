@@ -22,13 +22,6 @@ a:active {
   color: greenyellow;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #111;
-    color: #fff;
-  }
-}
-
 .bold,
 div label {
   font-weight: bold;
@@ -36,4 +29,11 @@ div label {
 
 .red {
   color: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #ddd;
+  }
 }
