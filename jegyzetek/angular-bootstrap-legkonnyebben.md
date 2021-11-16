@@ -20,15 +20,13 @@ Másoljuk ki az alábbi sorokat:
 ></script>
 ```
 
-<br>
-
 Másoljuk be az `src/index.html` alábbi sorába:
 
 ![Bootstrap](img/bootstrap-angularban.jpg)
 
 ## Ellenőrzés
 
-Töröljük a `src/app/app.component.html` minden tartalmát.
+Töröljük az `src/app/app.component.html` minden tartalmát.
 
 Másoljuk be oda az alábbi sorokat:
 
