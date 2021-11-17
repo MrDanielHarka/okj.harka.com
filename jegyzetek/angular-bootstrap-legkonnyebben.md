@@ -2,7 +2,7 @@
 
 Az alábbi módon lehet a legkönnyebben és a leggyorsabban hozzáadni a Bootstrap-et az Angular projektünkhöz.
 
-## Folyamat
+## Teendő
 
 Másoljuk ki az alábbi sorokat:
 
