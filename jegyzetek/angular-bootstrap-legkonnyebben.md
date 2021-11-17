@@ -26,7 +26,7 @@ Másoljuk be az `src/index.html` alábbi sorába:
 
 ## Ellenőrzés
 
-Töröljük az `src/app/app.component.html` minden tartalmát.
+Töröljük az `src/app/app.component.html` teljes tartalmát.
 
 Másoljuk be oda az alábbi sorokat:
 
