@@ -1,0 +1,63 @@
+html {
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+}
+body {
+  margin: 5px auto;
+  max-width: 1000px;
+}
+
+header {
+  background-position: center center;
+  height: 350px;
+  background-image: url('img/background.jpg');
+}
+
+h1 {
+  background-color: rgb(248, 248, 248, 0.75);
+  margin-top: 80px;
+  padding-left: 11rem;
+  font-family: Verdana, sans-serif;
+  color: #b925fd;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 10px;
+  color: #b925fd;
+  border-left: 3px solid #b925fd;
+  font-variant: small-caps;
+  padding: 5px 10px;
+}
+
+h3 {
+  font-weight: bold;
+  color: #b925fd;
+  text-align: center;
+  font-size: 130%;
+  letter-spacing: 1px;
+}
+li > a,
+li > a:visited,
+li > a:hover {
+  color: #b925fd;
+  font-weight: bold;
+}
+
+li {
+  list-style-image: url(img/octocat.png);
+}
+
+.special-list > li {
+  float: left;
+  margin-left: 40px;
+}
+
+.navbar {
+  background-color: #ca00fd5e;
+}
+
+p {
+  text-align: justify;
+  text-indent: 15px;
+}
