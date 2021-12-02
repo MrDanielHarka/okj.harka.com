@@ -1,0 +1,39 @@
+html {
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+}
+
+body {
+  color: #222;
+  margin: 10px auto;
+  max-width: 250px;
+  line-height: 1.6;
+  font-size: 17px;
+  padding: 0 10px;
+  zoom: 120%;
+}
+
+button {
+  margin: 2px;
+}
+
+.center {
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  color: green;
+  text-decoration: none;
+}
+
+a:active {
+  color: greenyellow;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #ddd;
+  }
+}

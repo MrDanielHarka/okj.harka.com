@@ -1,0 +1,73 @@
+<h1>Jelszó Generátor</h1>
+
+<br />
+
+<div>
+  <input type="text" [value]="password" #userinput required />
+  <button
+    (click)="copyInput(userinput)"
+    value="click to copy"
+    id="generateButton"
+  >
+    másolás
+  </button>
+</div>
+
+<div></div>
+
+<div>
+  <button
+    (click)="onButtonClick()"
+    [disabled]="
+      !(length > 0 && (includeLetters || includeNumbers || includeSymbols))
+    "
+  >
+    új jelszó generálása
+  </button>
+</div>
+
+<br />
+
+<b>Beállítások:</b>
+
+<div>
+  <label>Jelszó karakter hossz </label>
+  <input
+    type="number"
+    (input)="onChangeLength($event.target.value)"
+    required
+    value="10"
+    style="width: 40px"
+  />
+</div>
+
+<div>
+  <label>Tartalmazzon betűket</label>
+  <input type="checkbox" (change)="onChangeUseLetters()" checked />
+</div>
+
+<div>
+  <label>Tartalmazzon számokat</label>
+  <input type="checkbox" (change)="onChangeUseNumbers()" checked />
+</div>
+
+<div>
+  <label>Tartalmazzon szimbólumokat</label>
+  <input type="checkbox" (change)="onChangeUseSymbols()" checked />
+</div>
+
+<br />
+
+<hr noshade />
+
+<div class="center">
+  <b>
+    Forráskód:
+    <a
+      href="https://github.com/MrDanielHarka/okj.harka.com/tree/main/jelszo-generator"
+      target="_blank"
+      rel="noreferrer noopener nofollow"
+      >GitHub</a
+    >
+  </b>
+</div>
