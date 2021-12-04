@@ -1,3 +1,8 @@
+html {
+  height: initial;
+  background-color: rgba(d3d3d3);
+}
+
 body {
   margin: 5px auto;
   max-width: 1000px;
