@@ -1,0 +1,54 @@
+body {
+  margin: 5px auto;
+  max-width: 1000px;
+}
+
+.demo-card-square.mdl-card {
+  width: 300px;
+  height: 470px;
+}
+
+.person1 {
+  color: #fff;
+  background: url("https://okj.harka.com/img/jozsef.jpg") 10% no-repeat #46b6ac;
+}
+
+.person2 {
+  color: #fff;
+  background: url("https://sara.harka.com/img/sara-harka.jpg") 10% no-repeat
+    #46b6ac;
+}
+
+.person3 {
+  color: #fff;
+  background: url("https://daniel.harka.com/img/daniel-harka.jpg") 10% no-repeat
+    #46b6ac;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.center {
+  text-align: center;
+}
+
+a,
+a:visited,
+a:active,
+#link {
+  color: green;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.cards > app-card {
+  margin: 5px;
+}
+
+table {
+  margin: auto;
+  font-weight: bold;
+}

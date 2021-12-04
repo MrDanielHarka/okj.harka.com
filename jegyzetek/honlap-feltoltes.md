@@ -23,6 +23,17 @@ szerverünkön. :)
 Az alábbi honlapok mind ezzel (vagy nagyon hasonló) folyamattal lettek publikálva.
 
 - <a
+         href="https://bjozsef02.github.io"
+         target="_blank"
+         rel="noreferrer noopener nofollow"
+         >bjozsef02.github.io</a
+       > (<a
+         href="https://github.com/bjozsef02/bjozsef02.github.io"
+         target="_blank"
+         rel="noreferrer noopener nofollow"
+         >kód</a
+       >)
+- <a
          href="https://blankaharka.github.io"
          target="_blank"
          rel="noreferrer noopener nofollow"

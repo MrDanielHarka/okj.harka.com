@@ -1,0 +1,12 @@
+<h1 class="center">{{title}}</h1>
+<div class="cards">
+	<app-card
+		*ngFor="let post of posts"
+		[name]="post.name"
+		[personImage]="post.personImage"
+		[content]="post.content"
+		[website]="post.website"
+	></app-card>
+</div>
+
+<app-source></app-source>
