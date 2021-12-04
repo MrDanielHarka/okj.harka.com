@@ -1,7 +1,0 @@
-- Github source
-- max-width
-- PATH átírás
-- /docs/ beírás
-- index áthelyezés
-- github feltöltés
-- teams postolás

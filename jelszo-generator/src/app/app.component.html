@@ -3,7 +3,7 @@
 <br />
 
 <div>
-  <input type="text" [value]="password" #userinput required />
+  <input type="text" [value]="password" #userinput style="width: 128px" />
   <button
     (click)="copyInput(userinput)"
     value="click to copy"
@@ -31,29 +31,30 @@
 <b>Beállítások:</b>
 
 <div>
-  <label>Jelszó karakter hossz </label>
+  <label for="characterInput">Jelszó karakter hossz </label>
   <input
     type="number"
+    id="characterInput"
     (input)="onChangeLength($event.target.value)"
     required
-    value="10"
+    value="15"
     style="width: 40px"
   />
 </div>
 
 <div>
-  <label>Tartalmazzon betűket</label>
-  <input type="checkbox" (change)="onChangeUseLetters()" checked />
+  <label for="letters">Tartalmazzon betűket</label>
+  <input type="checkbox" id="letters" (change)="onChangeUseLetters()" checked />
 </div>
 
 <div>
-  <label>Tartalmazzon számokat</label>
-  <input type="checkbox" (change)="onChangeUseNumbers()" checked />
+  <label for="numbers">Tartalmazzon számokat</label>
+  <input type="checkbox" id="numbers" (change)="onChangeUseNumbers()" checked />
 </div>
 
 <div>
-  <label>Tartalmazzon szimbólumokat</label>
-  <input type="checkbox" (change)="onChangeUseSymbols()" checked />
+  <label for="symbols">Tartalmazzon szimbólumokat</label>
+  <input type="checkbox" id="symbols" (change)="onChangeUseSymbols()" checked />
 </div>
 
 <br />

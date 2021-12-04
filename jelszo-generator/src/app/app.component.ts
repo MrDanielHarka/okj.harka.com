@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent implements OnInit {
-  length = 10;
+  length = 15;
   includeLetters = true;
   includeNumbers = true;
   includeSymbols = true;
