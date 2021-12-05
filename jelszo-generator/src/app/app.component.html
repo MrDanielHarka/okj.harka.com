@@ -19,7 +19,13 @@
   <button
     (click)="onButtonClick()"
     [disabled]="
-      !(length > 0 && (includeLetters || includeNumbers || includeSymbols))
+      !(
+        length > 0 &&
+        (includeLowercase ||
+          includeUppercase ||
+          includeNumbers ||
+          includeSymbols)
+      )
     "
   >
     új jelszó generálása
@@ -43,8 +49,23 @@
 </div>
 
 <div>
-  <label for="letters">Tartalmazzon betűket</label>
-  <input type="checkbox" id="letters" (change)="onChangeUseLetters()" checked />
+  <label for="lowercase">Tartalmazzon kisbetűket</label>
+  <input
+    type="checkbox"
+    id="lowercase"
+    (change)="onChangeUseLowercase()"
+    checked
+  />
+</div>
+
+<div>
+  <label for="uppercase">Tartalmazzon nagybetűket</label>
+  <input
+    type="checkbox"
+    id="uppercase"
+    (change)="onChangeUseUppercase()"
+    checked
+  />
 </div>
 
 <div>

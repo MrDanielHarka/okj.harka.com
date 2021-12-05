@@ -7,7 +7,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AppComponent implements OnInit {
   length = 15;
-  includeLetters = true;
+  includeLowercase = true;
+  includeUppercase = true;
   includeNumbers = true;
   includeSymbols = true;
   password = "";
@@ -15,23 +16,33 @@ export class AppComponent implements OnInit {
   onGenerate() {
     if (
       this.length > 0 &&
-      (this.includeLetters || this.includeNumbers || this.includeSymbols)
+      (this.includeLowercase ||
+        this.includeUppercase ||
+        this.includeNumbers ||
+        this.includeSymbols)
     ) {
       const numbers = "1234567980";
-      const letters = "abcdefghijklmnopqrstuvwxyz";
+      const lowercase = "abcdefghijklmnopqrstuvwxyz";
+      const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       const symbols = "!@#$%^&*()";
 
       let validCharacters = "";
 
-      if (this.includeLetters) {
-        validCharacters += letters;
+      if (this.includeLowercase) {
+        validCharacters += lowercase;
+      }
+
+      if (this.includeUppercase) {
+        validCharacters += uppercase;
       }
 
       if (this.includeNumbers) {
         validCharacters += numbers;
+        validCharacters += numbers;
       }
 
       if (this.includeSymbols) {
+        validCharacters += symbols;
         validCharacters += symbols;
       }
 
@@ -58,8 +69,13 @@ export class AppComponent implements OnInit {
     this.onGenerate();
   }
 
-  onChangeUseLetters() {
-    this.includeLetters = !this.includeLetters;
+  onChangeUseLowercase() {
+    this.includeLowercase = !this.includeLowercase;
+    this.onGenerate();
+  }
+
+  onChangeUseUppercase() {
+    this.includeUppercase = !this.includeUppercase;
     this.onGenerate();
   }
 
