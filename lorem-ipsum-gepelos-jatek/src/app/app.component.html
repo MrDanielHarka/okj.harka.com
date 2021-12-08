@@ -1,0 +1,46 @@
+<h1>Gépelős Játék</h1>
+
+<br />
+
+<p>Írd be az alábbi szöveget!</p>
+
+<br />
+
+<i>
+  <span
+    [class]="compareLetters(letter, enteredText[i])"
+    *ngFor="let letter of randomText.split(''); let i = index"
+    >{{ letter }}</span
+  >
+</i>
+
+<br /><br />
+
+<div class="grow-wrap">
+  <textarea
+    name="text"
+    id="text"
+    #text
+    onInput="this.parentNode.dataset.replicatedValue = this.value"
+    type="text"
+    (input)="onInput($event.target.value)"
+  ></textarea>
+</div>
+
+<div *ngIf="randomText === enteredText">
+  <br />
+  <b>SIKER!</b>
+  <br /><br />
+  <button (click)="onReset()">Újra!</button>
+</div>
+
+<hr noshade />
+<p>
+  Forráskód:
+  <a
+    href="https://github.com/MrDanielHarka/okj.harka.com/tree/main/lorem-ipsum-gepelos-jatek"
+    target="_blank"
+    rel="noreferrer noopener nofollow"
+    >GitHub</a
+  >
+</p>

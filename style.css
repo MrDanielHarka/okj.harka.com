@@ -4,12 +4,12 @@ html {
 }
 
 body {
-  color: #222;
+  padding: 0 10px;
   margin: 10px auto;
+  color: #222;
   max-width: 500px;
   line-height: 1.6;
   font-size: 17px;
-  padding: 0 10px;
 }
 
 a:link,
