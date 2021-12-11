@@ -1,0 +1,116 @@
+<h1 class="centered">Okos Fizetési Űrlap</h1>
+
+<br /><br />
+
+<div class="content">
+	<div>
+		<label for="name">Kedvezményezett neve</label>
+		<br />
+		<input
+			type="text"
+			id="name"
+			list="names"
+			(input)="onNameChange($event.target.value)"
+			placeholder="harka sára"
+			[disabled]="disableFields"
+		/>
+		<datalist id="names">
+			<option value="harka sára"> </option>
+			<option value="hARKA dÁNIEL"> </option>
+			<option value="BíRó JóZsEf"> </option>
+		</datalist>
+
+		<br />
+		<label for="amount">Utalás összege</label>
+		<br />
+		<input
+			type="number"
+			id="amount"
+			(input)="onAmountChange($event.target.value)"
+			placeholder="200"
+			[disabled]="disableFields"
+		/>
+		<br />
+		<label for="date">Tranzakció napja</label>
+		<br />
+		<input
+			type="date"
+			id="date"
+			min="{{minDate}}"
+			(input)="onDateChange($event.target.value)"
+			[disabled]="disableFields"
+		/>
+		<br />
+	</div>
+	<div>
+		<div>
+			<b>Kedvezményezett neve</b> <br />
+			<div *ngIf="name; else noName">{{name | titlecase }}</div>
+			<ng-template #noName>&nbsp;</ng-template>
+		</div>
+		<div>
+			<b>Utalás összege</b> <br />
+			<div *ngIf="amount; else noAmount">{{amount | number: '1.0-0'}} Ft</div>
+			<ng-template #noAmount>&nbsp;</ng-template>
+		</div>
+		<div>
+			<b>Tranzakció napja</b> <br />
+			<div *ngIf="date; else noDate">
+				{{date | date }}
+			</div>
+			<ng-template #noDate>&nbsp;</ng-template>
+		</div>
+	</div>
+</div>
+
+<div class="centered" [class]="dashboardClass">
+	<br />
+	<div *ngIf="state==='start'">
+		<button
+			(click)="onButtonClick()"
+			[disabled]="
+		!(name && amount && date)
+	"
+		>
+			Küldés
+		</button>
+	</div>
+	<div *ngIf="state==='continue'">
+		Utalás beütemezve {{name | titlecase}} részére {{amount | number: '1.0-0'}}
+		Ft összeggel {{date}} napra.
+	</div>
+	<div *ngIf="state==='finish'">
+		{{message}}
+	</div>
+</div>
+
+<!-- <div class="centered" [class]="buttonClass">
+	<div *ngIf="hide; else noMessage">
+		<div id="message">
+			<br />
+			{{message}}
+		</div>
+	</div>
+	<ng-template #noMessage
+		><br />
+		<button (click)="onButtonClick()">Küldés</button></ng-template
+	>
+</div> -->
+
+<!-- <div class="centered" [class]="buttonClass">
+	<br />
+	<button (click)="onButtonClick()">Küldés</button>
+</div> -->
+
+<!-- <p>20.000 HUF el lesz küldve Harka Sára részére 2021.10.20. napon.</p> -->
+
+<hr noshade />
+<p class="centered" id="bottom">
+	Forráskód:
+	<a
+		href="https://github.com/MrDanielHarka/okj.harka.com/tree/main/okos-fizetesi-urlap"
+		target="_blank"
+		rel="noreferrer noopener nofollow"
+		>GitHub</a
+	>
+</p>
