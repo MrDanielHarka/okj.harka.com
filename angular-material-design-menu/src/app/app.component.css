@@ -1,0 +1,58 @@
+main {
+  padding: 0 10px;
+  margin: 10px auto;
+  max-width: 700px;
+}
+
+p {
+  font-size: 18px;
+}
+
+#source {
+  font-size: 18px;
+}
+
+.material-icons {
+  font-size: 50px;
+}
+
+mat-card,
+.centered {
+  margin: 10px auto;
+  max-width: 180px;
+  text-align: center;
+}
+
+/* Below is for buttons: */
+
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
