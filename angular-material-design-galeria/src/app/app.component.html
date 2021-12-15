@@ -1,0 +1,50 @@
+<br />
+<h1>Material Design Galéria</h1>
+<br />
+<nav mat-tab-nav-bar mat-align-tabs="center">
+  <button
+    mat-button
+    [ngClass]="{ disabled: currentLink === 0 }"
+    (click)="currentLink = currentLink - 1"
+    [disabled]="currentLink === 0"
+  >
+    Előző
+  </button>
+  <ng-container *ngFor="let link of links; let i = index">
+    <button
+      mat-button
+      *ngIf="checkWindowIndex(i)"
+      (click)="currentLink = i"
+      [ngClass]="{ active: i === currentLink }"
+      [disabled]="currentLink === i"
+    >
+      {{ i + 1 }}
+    </button>
+  </ng-container>
+  <button
+    mat-button
+    [ngClass]="{ disabled: currentLink === links.length - 1 }"
+    (click)="currentLink = currentLink + 1"
+    [disabled]="currentLink === links.length - 1"
+  >
+    Következő
+  </button>
+</nav>
+<br />
+<div>
+  <h2>{{ links[currentLink].title }}</h2>
+  <br />
+  <img [src]="links[currentLink].url" alt="" style="max-width: 320px" />
+</div>
+
+<mat-card id="source"
+  >Forráskód:
+  <a
+    href="https://github.com/MrDanielHarka/okj.harka.com/tree/main/angular-material-design-galeria"
+    target="_blank"
+    rel="noreferrer noopener nofollow"
+    >GitHub</a
+  ></mat-card
+>
+
+<!-- (click)="activeLink = link" -->

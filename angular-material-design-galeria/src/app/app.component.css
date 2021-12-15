@@ -1,0 +1,12 @@
+mat-card {
+  margin: 3.5em auto 10px auto;
+  max-width: 130px;
+  text-align: center;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: green;
+  text-decoration: none;
+}
