@@ -1,0 +1,111 @@
+<h1 (click)="onGoToHomepage()" title="PiciBank | főoldal">PiciBank</h1>
+
+<hr noshade style="width: 200px" />
+
+<br />
+
+<div *ngIf="showModule === 'users'">
+  <h2>Alszámlák</h2>
+  <ul>
+    <li *ngFor="let user of users; let i = index" (click)="onSelectSender(i)">
+      {{ user.name }} | Egyenleg: {{ user.balance | number: "1.0-0" }}
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="showModule === 'transfer'">
+  <h2>Utalás</h2>
+  <h3>
+    {{ users[senderUser].name }} | Egyenleg:
+    {{ users[senderUser].balance | number: "1.0-0" }}
+  </h3>
+
+  <br /><br />
+
+  <label for="receiver">Kedvezményezett:</label>
+  <br />
+  <select
+    id="receiver"
+    name="receiver"
+    (change)="onSelectReceiver($event)"
+    [disabled]="transferDone"
+  >
+    <option hidden></option>
+    <option *ngFor="let user of users; let i = index" value="{{ i }}">
+      {{ user.name }}
+    </option>
+  </select>
+
+  <div *ngIf="senderUser == receiverUser" style="color: red; font-weight: bold">
+    <br />
+    Saját számlára utalás nem engedélyezett!
+  </div>
+
+  <br /><br />
+
+  <label for="amount">Utalás összege</label>
+  <br />
+  <input
+    type="number"
+    id="amount"
+    (input)="onAmountChange($event.target.value)"
+    style="max-width: 100px"
+    [disabled]="transferDone"
+    min="1"
+    step="1"
+  />
+  Ft
+
+  <div
+    *ngIf="
+      users[this.senderUser].balance - this.transferAmount < 0 && !transferDone
+    "
+    style="color: red; font-weight: bold"
+  >
+    <br />
+    Az utalás összege magasabb, mint a rendelkezésre álló egyenleg.
+  </div>
+
+  <br /><br />
+  <button
+    (click)="onTransferButtonClick()"
+    [disabled]="
+      !receiverUser ||
+      !transferAmount ||
+      senderUser == receiverUser ||
+      users[this.senderUser].balance - this.transferAmount < 0 ||
+      this.transferAmount < 0
+    "
+    *ngIf="!transferDone"
+  >
+    Utalás
+  </button>
+  <div *ngIf="transferDone">
+    {{ transferAmount | number: "1.0-0" }} Ft utalva
+    {{ users[senderUser].name }} számlájáról
+    {{ users[receiverUser].name }} számlájára. <br /><br />
+
+    <button (click)="onGoToHomepage()">Vissza az alszámlákhoz</button>
+  </div>
+</div>
+
+<!-- Menu: Picibank | Alszámlák | Utalás | Tranzakciók -->
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<hr noshade style="width: 200px" />
+
+<p>
+  Forráskód:
+  <a
+    href="https://github.com/MrDanielHarka/okj.harka.com/tree/main/pici-bank-online-netbank"
+    target="_blank"
+    rel="noreferrer noopener nofollow"
+    >GitHub</a
+  >
+</p>

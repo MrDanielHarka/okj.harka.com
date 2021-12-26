@@ -33,8 +33,6 @@ export class AppComponent {
     },
   ];
 
-  activeLink = 0;
-
   checkWindowIndex(index: number) {
     return Math.abs(this.currentLink - index) < 5;
   }

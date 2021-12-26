@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+  cursor: default;
+  text-align: center;
+}
+
+body {
+  padding: 0 10px;
+  margin: 10px auto;
+  max-width: 500px;
+}
+
+h1,
+li {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  color: green;
+  text-decoration: none;
+}
+
+a:active {
+  color: greenyellow;
+}
