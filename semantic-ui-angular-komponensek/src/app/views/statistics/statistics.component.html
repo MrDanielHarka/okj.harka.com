@@ -1,0 +1,6 @@
+<div class="ui statistics">
+  <div class="statistic" *ngFor="let stat of data">
+    <div class="value">{{ stat.value | number: "1.0-0" }}</div>
+    <div class="label">{{ stat.label }}</div>
+  </div>
+</div>

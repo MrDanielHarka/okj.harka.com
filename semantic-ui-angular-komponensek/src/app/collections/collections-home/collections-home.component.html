@@ -1,0 +1,21 @@
+<app-divider>Táblázat komponens</app-divider>
+
+<app-table [data]="data" [headers]="headers" class="striped celled"></app-table>
+
+<app-divider>Lapok komponens</app-divider>
+
+<app-tabs>
+  <div class="ui vertical fluid tabular menu">
+    <a
+      routerLink="."
+      class="item"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Életrajz</a
+    >
+    <a routerLink="cegek" class="item" routerLinkActive="active">Cégek</a>
+    <a routerLink="partnerek" class="item" routerLinkActive="active"
+      >Partnerek</a
+    >
+  </div>
+</app-tabs>

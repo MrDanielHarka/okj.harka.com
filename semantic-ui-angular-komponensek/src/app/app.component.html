@@ -1,0 +1,18 @@
+<h1>Semantic UI Komponensek</h1>
+<div class="ui container">
+  <div class="ui secondary pointing menu">
+    <a routerLink="elemek" class="item" routerLinkActive="active">Elemek</a>
+    <a routerLink="gyujtemenyek" class="item" routerLinkActive="active"
+      >Gyűjtemények</a
+    >
+    <a routerLink="megtekintesek" class="item" routerLinkActive="active"
+      >Megtekintések</a
+    >
+    <a routerLink="modulok" class="item" routerLinkActive="active">Modulok</a>
+  </div>
+  <div class="ui segment">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<app-source></app-source>

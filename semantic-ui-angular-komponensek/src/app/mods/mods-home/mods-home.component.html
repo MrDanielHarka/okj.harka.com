@@ -1,0 +1,11 @@
+<app-divider>Felugró komponens</app-divider>
+<button (click)="onClick()" class="ui button">Felugró ablak megnyitása</button>
+<app-modal (close)="onClick()" *ngIf="modalOpen">
+  <div modalTitle>Felugró ablak</div>
+  <p>A felugró ablak tartalma.</p>
+  <ng-container modalFooter>
+    <button class="ui button" (click)="onClick()">Ok</button>
+  </ng-container>
+</app-modal>
+<app-divider>Harmonika komponens</app-divider>
+<app-accordion [items]="items"></app-accordion>
