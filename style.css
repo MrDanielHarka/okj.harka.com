@@ -12,14 +12,10 @@ body {
   font-size: 17px;
 }
 
-a:link,
+a,
 a:visited {
   color: green;
   text-decoration: none;
-}
-
-a:active {
-  color: greenyellow;
 }
 
 .bold,
