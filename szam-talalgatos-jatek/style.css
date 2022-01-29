@@ -1,0 +1,28 @@
+main {
+  margin: 5px auto;
+  max-width: 450px;
+  padding: 0 10px;
+  color: #222;
+}
+
+form {
+  font-size: 200%;
+}
+
+.centered {
+  text-align: center;
+}
+
+input,
+button {
+  width: 100px;
+}
+
+#question {
+  font-weight: bold;
+}
+
+#guessedNumberForm,
+#newGameButton {
+  display: none;
+}

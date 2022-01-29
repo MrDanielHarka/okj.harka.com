@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Szám találgató | okj.harka.com</title>
+    <link rel="stylesheet" href="simple.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <br />
+      <h1>Szám találgató</h1>
+      <p>Egyszerű szám találgatós játék.</p>
+    </header>
+    <main>
+      <div>
+        <p>
+          Gondolok egy számra, te pedig kitalálod. Amikor találgatsz, akkor
+          segítek, hogy kisebb vagy nagyobb számra gondoltam-e.
+        </p>
+      </div>
+      <div class="centered">
+        <p id="question">Maximum mekkora számra gondoljak?</p>
+        <form
+          onsubmit="return highestNumberCheck(); return false"
+          id="highestNumberForm"
+        >
+          <input type="text" id="highestNumberInput" autofocus />
+          <br />
+          <button>Mehet</button>
+        </form>
+
+        <form
+          onsubmit="return guessedNumberCheck(); return false"
+          id="guessedNumberForm"
+        >
+          <input type="text" id="guessedNumberInput" />
+          <br />
+          <button id="guessButton">Mehet</button>
+        </form>
+      </div>
+      <div>
+        <p id="message" class="centered"></p>
+      </div>
+      <div class="centered">
+        <button onclick="location.reload()" id="newGameButton">Új játék</button>
+      </div>
+    </main>
+    <footer>
+      Forráskód:
+      <b>
+        <a
+          href="https://github.com/MrDanielHarka/okj.harka.com/blob/main/szam-talalgatos-jatek"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >GitHub</a
+        ></b
+      >
+    </footer>
+  </body>
+</html>
