@@ -30,7 +30,7 @@ const displayQuestion = function (question) {
 const highestNumberCheck = function () {
   highestNumber = parseInt(document.getElementById('highestNumberInput').value);
 
-  if (highestNumber > 0) {
+  if (highestNumber > 1) {
     highestNumberForm.style.display = 'none';
     guessedNumberForm.style.display = 'block';
     displayQuestion('Melyik számra gondoltam?');
@@ -39,10 +39,8 @@ const highestNumberCheck = function () {
     document.getElementById('guessedNumberInput').focus();
   }
 
-  if (highestNumber < 1 || !Number.isInteger(highestNumber)) {
+  if (highestNumber < 2 || !Number.isInteger(highestNumber)) {
     displayMessage('Egynél nagyobb <b>számot</b> kérek.');
-    document.getElementById('message').innerHTML =
-      'Egynél nagyobb <b>számot</b> kérek.';
     document.getElementById('highestNumberInput').value = '';
     document.getElementById('highestNumberInput').focus();
   }
