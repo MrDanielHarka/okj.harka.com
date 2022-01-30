@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teendő lista | okj.harka.com</title>
+    <link rel="stylesheet" href="simple.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <br />
+      <h1>Teendő lista</h1>
+      <p>Egy parancsokkal navigálható teendő lista.</p>
+    </header>
+    <main>
+      <div class="centered">
+        <p><b> Mi a parancs?</b></p>
+        <form onsubmit="return commandCheck(); return false" id="commandForm">
+          <input type="text" id="commandInput" autofocus />
+          <br />
+          <button>Mehet</button>
+        </form>
+
+        <p id="message"></p>
+      </div>
+      <br /><br /><br />
+      <details>
+        <summary>Hogyan működik ez?</summary>
+        <br />
+        <b>Parancsok:</b>
+        <p>open, add, remove, close, party</p>
+        <b>Bevitel:</b>
+        <p>
+          A <kbd>Mehet</kbd> gomb vagy az <kbd>enter</kbd> billentyű
+          megnyomásával.
+        </p>
+        <b>Példa:</b>
+        <p>
+          &#8226; <b>open</b> (lista megnyitása)
+          <br />
+          &#8226; <b>add szemetet kivinni</b> ("szemetet kivinni" hozzáadása a
+          listához)
+          <br />
+          &#8226; <b>remove 3</b> (3. listaelem törlése)
+          <br />
+          &#8226; <b>close</b> (lista bezárása)
+          <br />
+          &#8226; <b>party</b> (ha kész a lista vagy csak lazítanál, akkor ideje
+          bulizni)
+        </p>
+      </details>
+    </main>
+
+    <footer>
+      Forráskód:
+      <b>
+        <a
+          href="https://github.com/MrDanielHarka/okj.harka.com/blob/main/parancssor-teendo-lista"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >GitHub</a
+        ></b
+      >
+    </footer>
+  </body>
+</html>

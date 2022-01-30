@@ -1,0 +1,25 @@
+main {
+  margin: 5px auto;
+  padding: 0 10px;
+  color: #222;
+}
+
+.centered {
+  text-align: center;
+}
+
+input,
+video {
+  width: 270px;
+}
+
+li {
+  text-align: left;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+summary {
+  font-weight: normal;
+  text-align: center;
+}
