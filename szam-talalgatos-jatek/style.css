@@ -26,3 +26,8 @@ button {
 #newGameButton {
   display: none;
 }
+
+summary {
+  font-weight: normal;
+  text-align: center;
+}
