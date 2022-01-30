@@ -64,11 +64,12 @@ const commandCheck = function () {
   } else if (command === 'party' || command === 'Party') {
     displayMessage(`
     <video autoplay loop>
-      <source src="party.mp4" type="video/mp4" />
+      <source src="party.mp4" type="video/mp4">
+      <source src="party.ogg" type="video/ogg">
       Your browser does not support the video tag. :(
     </video>`);
   } else {
-    displayMessage('Ez nem egy ismert parancs.');
+    displayMessage('Ez egy ismeretlen parancs.');
   }
   document.getElementById('commandInput').value = '';
   document.getElementById('commandInput').focus();
