@@ -63,11 +63,15 @@ const commandCheck = function () {
     displayMessage('');
   } else if (command === 'party' || command === 'Party') {
     displayMessage(`
-    <video autoplay loop>
+    <video loop id="video">
       <source src="party.mp4" type="video/mp4">
       <source src="party.ogg" type="video/ogg">
       Your browser does not support the video tag. :(
     </video>`);
+    setTimeout(function () {
+      document.getElementById('video').play();
+    }, 0);
+    // document.querySelector('video').muted = 'false';
   } else {
     displayMessage('Ez egy ismeretlen parancs.');
   }
