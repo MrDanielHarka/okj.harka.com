@@ -1,15 +1,10 @@
 'use strict';
 
-const formPreventdefault = document.getElementById('commandForm');
-function handleForm(event) {
-  event.preventDefault();
-}
-formPreventdefault.addEventListener('submit', handleForm);
-
 let command,
   todosHtml = '';
 
-const displayMessage = function (message) {
+const commandForm = document.querySelector('#commandForm'),
+  displayMessage = function (message) {
     document.getElementById('message').innerHTML = message;
   },
   updateTodosHtml = function () {
@@ -30,7 +25,8 @@ const displayMessage = function (message) {
     'valamennyit társasozni',
   ];
 
-const commandCheck = function () {
+commandForm.addEventListener('submit', function (e) {
+  e.preventDefault();
   command = document.getElementById('commandInput').value;
 
   if (command === 'open' || command === 'Open') {
@@ -77,4 +73,4 @@ const commandCheck = function () {
   }
   document.getElementById('commandInput').value = '';
   document.getElementById('commandInput').focus();
-};
+});
