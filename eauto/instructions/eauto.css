@@ -1,0 +1,54 @@
+body {}
+
+.bg-fej {
+    font-size: 50%;
+    height: 250px;
+}
+
+.bg-fej h2 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bg-fej h3 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container {
+    margin-bottom: 25px;
+}
+
+.bg-torzs {
+    background-color: #C5C599;
+    align-content: center;
+}
+
+h3 {
+    margin: 25px 0px;
+}
+
+a {
+    font-style: italic;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#szel,
+#mag {
+    margin: 0px auto 15px;
+}
+
+#kalkGomb {
+    margin: 20px auto;
+}
+
+#valasz {
+    visibility: hidden;
+}
+
+.bodídiv {
+    width: max-content;
+}

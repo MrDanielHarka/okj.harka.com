@@ -1,0 +1,180 @@
+<div>
+  <header class="jumbotron text-center">
+    <h2>Európai Parlament</h2>
+    <h3>
+      Amit érdemes tudni a gépjárművek
+      <br />
+      szén-dioxid-kibocsátásáról az EU-ban
+    </h3>
+  </header>
+  <main>
+    <section class="flex-container section1">
+      <div>
+        <h2 class="subheading">Az autók a legfőbb szennyezők.</h2>
+        <p>
+          A személyszállításból származó szén-dioxid-kibocsátás aránya
+          jelentősen eltér az egyes közlekedési eszközöket tekintetében. A
+          személygépjárművek a leginkább szennyezőek, az európai közúti
+          közlekedésből adódó teljes szén-dioxid-kibocsátás 60,7 százalékáért
+          felelősek. Az sem mindegy azonban, hogy hány utast szállít egy-egy
+          autó: ha többet és nem egyedül utazik a sofőr, akkor a legkevésbé
+          szennyező járművek közé tartozhat. Európában azonban átlagosan csupán
+          <a
+            href="https://core.ac.uk/download/pdf/82726264.pdf"
+            target="_blank"
+          >
+            1,7 utast szállít egy autó</a
+          >, így pedig más közlekedési eszközök, mint például a buszok, jelenleg
+          kevésbé káros alternatívát jelentenek. Azt a kérdés viszont, hogy egy
+          autó mennyi szén-dioxidot bocsájt ki, nemcsak használatuk közben kell
+          feltennünk, hanem az előállításuk és szállításuk során is. Az
+          elektromos autók előállítása és szállítása kevésbé környezetkímélő,
+          mint a belsőégésű motorral rendelkező autóké, az elektromos
+          gépjárművek szén-dioxid-kibocsátásának mértéke pedig annak megfelelően
+          változik, hogyan állítják elő az elektromosságot. Ha azonban azt
+          nézzük, hogy mennyi károsanyagot bocsátanak ki az autók a gyártásuktól
+          a bontásukig, akkor az elektromos autók bizonyítottan
+          környezetkímélőbbek, mint a benzinnel működők. Mivel a megújuló
+          energiaforrásokból származó elektromosság használata várhatóan egyre
+          növekszik a jövőben, az elektromos autók egyre kevésbé lesznek károsak
+          a környezetre.
+        </p>
+      </div>
+      <div class="img-wrapper">
+        <img
+          src="assets/img/20190507PHT44968_original.jpg"
+          class="img1"
+          alt=""
+        />
+      </div>
+    </section>
+    <br />
+    <section class="stats flex-container section2">
+      <div>
+        <h2>Európában 140%-ot nőttek a villyanautó eladások</h2>
+        <p>
+          Alapvetően nem volt rossz az előző évek növekedése, de 2020
+          mindenképpen kimagaslóan jónak számít. A 142% növekedés azt jelenti,
+          hogy praktikusan két és félszer annyi tölthető autó fogyott mint egy
+          évvel korábban, ami döbbenetesen jó szám. Az eladások bőven átlépték a
+          milliós küszöböt, sőt, az 1,36 millió eladott konnektoros autó közül a
+          9 legnépszerűbb modell, valamint az összes eladások 54%-a tisztán
+          elektromos volt.
+          <a
+            href="https://villanyautosok.hu/2021/02/04/europaban-140-ot-nottek-a-villanyauto-eladasok-2020-ban/"
+            target="_blank"
+            >Eredeti cikk</a
+          >
+        </p>
+        <div>
+          <img src="assets/img/europai-eladasok.png" alt="" />
+        </div>
+      </div>
+      <div>
+        <h2>Az európai piac toplistája</h2>
+        <p>
+          "...A lista első helyét a Renault Zoe vette át. A francia kisautó
+          frissített tartalommal, nagyobb aksival, DC villámtöltéssel és vonzó
+          árral szállt harcba, és kétszer annyi fogyott belőle, mint egy évvel
+          korábban. Ár/hatótáv arányban, itthon is nehéz lett volna jobb vételt
+          ajánlani. A Zoénál jóval drágább, nagyobb és erősebb Tesla Model 3 egy
+          helyet visszaesve a második lett tavaly. A cég első, harmadik és
+          negyedik negyedéves eladásai nagyjából hozták a 2019-es számokat, de a
+          fremonti gyár koronavírus miatti lezárása 40%-os csökkenést
+          eredményezett a második negyedévben..."
+        </p>
+        <div>
+          <img src="assets/img/europai-eladasok-tipus.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="section3 section3-flex-container">
+      <div>
+        <h2>Villanyautó eladások európában</h2>
+        <b>A kiválasztott európai adatok jelennek meg.</b>
+        <br /><br />
+        <label for="years"
+          >Válassza ki, melyik év adatait szeretné látni:</label
+        >
+        <br /><br />
+        <select name="years" id="years">
+          <option value="none" disabled selected="selected">
+            Válasszon évet...
+          </option>
+          <option value="{{ year }}" *ngFor="let year of years">
+            {{ year }}
+          </option>
+        </select>
+        <br />
+        <button class="dataButton" (click)="alert()">Adatok</button>
+      </div>
+      <div>
+        <h2>Toplista</h2>
+        <br /><br />
+        <label for="cars"
+          >Válassza ki, melyik jelentős szereplő adatait szeretné látni:</label
+        >
+        <br /><br />
+        <select name="cars" id="cars">
+          <option value="none" disabled selected="selected">
+            Válasszon e auto típust...
+          </option>
+          <option value="{{ car }}" *ngFor="let car of cars">
+            {{ car }}
+          </option>
+        </select>
+        <br />
+        <button class="dataButton" (click)="alert()">Adatok</button>
+      </div>
+    </section>
+    <section class="section4 flex-container">
+      <div>
+        <img src="assets/img/eu_world.png" alt="" />
+      </div>
+      <div>
+        <ul>
+          <li>Európai összesen (E-auto): 3,140,006 db</li>
+          <li>Világpiac összesen (hagyományos): 81,290,038 db</li>
+          <li>Európai piac aránya: 3.86%</li>
+          <li><a (click)="alert()">Részletes adatok</a></li>
+        </ul>
+      </div>
+      <!-- <div class="table-wrapper">
+        <table>
+          <tr>
+            <th *ngFor="let header of headers">{{ header }}</th>
+          </tr>
+          <tr>
+            <td *ngFor="let detail2014 of details2014">{{ detail2014 }}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let detail2015 of details2015">{{ detail2015 }}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let detail2016 of details2016">{{ detail2016 }}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let detail2017 of details2017">{{ detail2017 }}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let detail2018 of details2018">{{ detail2018 }}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let detail2019 of details2019">{{ detail2019 }}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let detail2020 of details2020">{{ detail2020 }}</td>
+          </tr>
+        </table>
+      </div> -->
+    </section>
+    <section class="source">
+      Forráskód:
+      <a
+        href="https://github.com/MrDanielHarka/okj.harka.com/tree/main/eauto"
+        target="_blank"
+        >GitHub</a
+      >
+    </section>
+  </main>
+</div>
