@@ -1,0 +1,12 @@
+[
+{"type":"header","version":"5.1.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"covid"},
+{"type":"table","name":"eu_zonak","database":"covid","data":
+[
+{"id":"1","zonanev":"Nyugat-Európa"},
+{"id":"2","zonanev":"Dél-Európa"},
+{"id":"3","zonanev":"Észak-Európa"},
+{"id":"4","zonanev":"Visegrádi országok"}
+]
+}
+]

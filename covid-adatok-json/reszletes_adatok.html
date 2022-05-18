@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Részletes adatok | Covid</title>
+    <link rel="stylesheet" href="covid.css" />
+  </head>
+
+  <body>
+    <header class="jumbotron text-center">
+      <a href="https://okj.harka.com/covid-adatok-json/">
+        <h2>COVID</h2>
+        <h3>KÜLKERESKEDELMI FOLYAMATOK 2020. JANUÁR–MÁJUS</h3>
+      </a>
+    </header>
+    <main>
+      <section class="stats flex-container section-big">
+        <div>
+          <h2>Magyar külkereskedelmi teljesítmény</h2>
+          <p class="bold-text">A Covid–19-járvány negatív gazdasági hatásai</p>
+          <p>
+            „…A magyar külkereskedelmi teljesítményt vizsgálva azt láthatjuk,
+            hogy a járvány világméretű terjedése a hazai külkereskedelmet is
+            rendkívüli mértékben visszavetette. A járvány világméretű
+            terjedésének kezdetén (2020. február) még kiugró exportszintet és
+            jelentős többletet eredményezett, azonban ezt követően a
+            külkereskedelmi forgalom jelentős mértékben kezdett csökkeni. 2020.
+            január–áprilisban a teljes magyar külkereskedelmi forgalom 6
+            milliárd euróval mérséklődött az előző év azonos időszakához mérten.
+            A termékexport 3,4 milliárd euróval, a termékimport 2,6 milliárd
+            euróval csökkent, a külkereskedelmi egyenleg pedig 738 millió
+            euróval romlott az egy évvel korábbihoz viszonyítva.”
+          </p>
+          <div class="centered-text">
+            <img src="img/magyar_egyenleg.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="centered-text">
+        <h2>Magyarországi adatok részletes megtekintése:</h2>
+        <table>
+          <tr>
+            <th>Id</th>
+            <th>Dátum</th>
+            <th>Import(millió euró)</th>
+            <th>Export(millió euró)</th>
+          </tr>
+        </table>
+      </section>
+      <br /><br />
+      <hr noshade />
+      <section class="source">
+        Forráskód:
+        <a
+          href="https://github.com/MrDanielHarka/okj.harka.com/tree/main/covid-adatok-json"
+          target="_blank"
+          >GitHub</a
+        >
+      </section>
+    </main>
+    <script src="reszletes_adatok.js"></script>
+  </body>
+</html>

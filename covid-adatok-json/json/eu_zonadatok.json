@@ -1,0 +1,24 @@
+[
+{"type":"header","version":"5.1.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"covid"},
+{"type":"table","name":"eu_zonadatok","database":"covid","data":
+[
+{"zonakID":"1","adatokID":"1"},
+{"zonakID":"1","adatokID":"2"},
+{"zonakID":"1","adatokID":"3"},
+{"zonakID":"1","adatokID":"4"},
+{"zonakID":"2","adatokID":"5"},
+{"zonakID":"2","adatokID":"6"},
+{"zonakID":"2","adatokID":"7"},
+{"zonakID":"2","adatokID":"8"},
+{"zonakID":"3","adatokID":"9"},
+{"zonakID":"3","adatokID":"10"},
+{"zonakID":"3","adatokID":"11"},
+{"zonakID":"3","adatokID":"12"},
+{"zonakID":"4","adatokID":"13"},
+{"zonakID":"4","adatokID":"14"},
+{"zonakID":"4","adatokID":"15"},
+{"zonakID":"4","adatokID":"16"}
+]
+}
+]

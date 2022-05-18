@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Főoldal | Covid</title>
+    <link rel="stylesheet" href="covid.css" />
+  </head>
+
+  <body>
+    <header class="jumbotron text-center">
+      <a href="https://okj.harka.com/covid-adatok-json/">
+        <h2>COVID</h2>
+        <h3>KÜLKERESKEDELMI FOLYAMATOK 2020. JANUÁR–MÁJUS</h3>
+      </a>
+    </header>
+    <main>
+      <section class="flex-container section1">
+        <p>
+          A 2019 végén, Kínában kitört Covid-19-járvány 2020 március elejére
+          világméretűvé vált, ami a kedvező hazai gazdasági-társadalmi
+          folyamatokat is megtörte. A járvány a termék-külkereskedelem mellett a
+          korábbi válságokkal szemben ellenálló szolgáltatás-külkereskedelemben
+          is számottevő visszaesést okozott. 2020 áprilisában és májusában
+          nagymértékben visszaesett a külkereskedelmi teljesítmény, mely az
+          árucsoportok és szolgáltatások széles körét érintették.
+          <a
+            href="https://koronavirus.gov.hu"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >Tájékoztató oldal a koronavírusról</a
+          >
+        </p>
+      </section>
+      <br />
+      <section class="stats flex-container section2">
+        <div>
+          <h2>Európai</h2>
+          <p>
+            Az európai országok exportteljesítményét tekintve az elmúlt hónapok
+            során a termék-külkereskedelem általános visszaesését láthattuk. A
+            járvány terjedésének hatására különböző korlátozó intézkedések
+            léptek hatályba, és közben a keresleti feltételek is jelentős
+            mértékben romlottak, így a járvány negatív gazdasági hatásai – a
+            jelenleg rendelkezésre álló nemzetközi adatok alapján – a márciusi
+            és az áprilisi külkereskedelmi adatokban érhetők tetten. Az európai
+            országok közül a legjelentősebb mértékben a dél-európaiak
+            termékexportja esett vissza. A márciusi, éves alapon mért 13,6%-os
+            mérséklődést áprilisban 40,7%-os visszaesés követte. A visegrádi
+            országok termékexportja is érdemi csökkenést mutatott, áprilisban
+            35%-kal esett vissza.
+          </p>
+          <div>
+            <img src="img/europa.png" alt="" />
+          </div>
+        </div>
+        <div>
+          <h2>Magyar külkereskedelmi teljesítmény</h2>
+          <p class="bold-text">A Covid–19-járvány negatív gazdasági hatásai</p>
+          <p>
+            „…A magyar külkereskedelmi teljesítményt vizsgálva azt láthatjuk,
+            hogy a járvány világméretű terjedése a hazai külkereskedelmet is
+            rendkívüli mértékben visszavetette. A járvány világméretű
+            terjedésének kezdetén (2020. február) még kiugró exportszintet és
+            jelentős többletet eredményezett, azonban ezt követően a
+            külkereskedelmi forgalom jelentős mértékben kezdett csökkeni. 2020.
+            január–áprilisban a teljes magyar külkereskedelmi forgalom 6
+            milliárd euróval mérséklődött az előző év azonos időszakához mérten.
+            A termékexport 3,4 milliárd euróval, a termékimport 2,6 milliárd
+            euróval csökkent, a külkereskedelmi egyenleg pedig 738 millió
+            euróval romlott az egy évvel korábbihoz viszonyítva.”
+          </p>
+          <div>
+            <img src="img/magyar_egyenleg.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="section3 section3-flex-container">
+        <div>
+          <h2>Europa</h2>
+          <b
+            >A kiválasztott európai térségek adatai jelennek meg, havi
+            bontásban.
+          </b>
+          <br /><br />
+          <label for="years"
+            >Válassza ki, melyik jelentős szereplő adatait szeretné
+            látni:</label
+          >
+          <br /><br />
+          <select name="territory" id="territory">
+            <option value="none" disabled selected="selected">
+              Válasszon térséget...
+            </option>
+          </select>
+          <br />
+          <button
+            class="dataButton"
+            onclick="location.href = './europai_regio_adatai.html';"
+          >
+            Adatok
+          </button>
+        </div>
+        <div>
+          <h2>Magyarországi adatok</h2>
+
+          <div>
+            <ul>
+              <li>Export összesen: 260,558.42 EUR</li>
+              <li>Import összesen: 243,786.09 EUR</li>
+              <li>Export és import egyenleg: 16,772.33 EUR</li>
+              <li><a href="reszletes_adatok.html">Részletes adatok</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+      <hr noshade class="hr-style" />
+      <section class="source">
+        Forráskód:
+        <a
+          href="https://github.com/MrDanielHarka/okj.harka.com/tree/main/covid-adatok-json"
+          target="_blank"
+          >GitHub</a
+        >
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+[
+{"type":"header","version":"5.1.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"covid"},
+{"type":"table","name":"eu_adatok","database":"covid","data":
+[
+{"id":"1","datum":"2021-01-01","szazalekpont":"-1"},
+{"id":"2","datum":"2021-01-01","szazalekpont":"12.6"},
+{"id":"3","datum":"2021-01-01","szazalekpont":"1.5"},
+{"id":"4","datum":"2021-01-01","szazalekpont":"2"},
+{"id":"5","datum":"2021-02-01","szazalekpont":"-0.9"},
+{"id":"6","datum":"2021-02-01","szazalekpont":"4.9"},
+{"id":"7","datum":"2021-02-01","szazalekpont":"3.2"},
+{"id":"8","datum":"2021-02-01","szazalekpont":"3.9"},
+{"id":"9","datum":"2021-03-01","szazalekpont":"-6.6"},
+{"id":"10","datum":"2021-03-01","szazalekpont":"13.6"},
+{"id":"11","datum":"2021-03-01","szazalekpont":"4.5"},
+{"id":"12","datum":"2021-03-01","szazalekpont":"10.6"},
+{"id":"13","datum":"2021-04-01","szazalekpont":"-28.7"},
+{"id":"14","datum":"2021-04-01","szazalekpont":"-41.71"},
+{"id":"15","datum":"2021-04-01","szazalekpont":"-21.5"},
+{"id":"16","datum":"2021-04-01","szazalekpont":"-35"}
+]
+}
+]
