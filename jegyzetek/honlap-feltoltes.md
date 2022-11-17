@@ -56,17 +56,6 @@ Az alábbi honlapok mind ezzel (vagy nagyon hasonló) folyamattal lettek publik�
          >kód</a
        >)
 - <a
-         href="https://mokuslekvar01.github.io"
-         target="_blank"
-         rel="noreferrer noopener nofollow"
-         >mokuslekvar01.github.io</a
-       > (<a
-         href="https://github.com/Mokuslekvar01/Mokuslekvar01.github.io"
-         target="_blank"
-         rel="noreferrer noopener nofollow"
-         >kód</a
-       >)
-- <a
         href="https://sara.harka.com"
         target="_blank"
         >sara.harka.com</a
@@ -250,7 +239,7 @@ Ezt pedig nevezd át arra, amire csak szeretnéd és rakj bele bármilyen tetsz�
 
 Kép a 4, 5 és 6-os ponthoz
 
-![Linkeles](img/linkeles.jpg) 7. Nagyon opcionális: Ha szeretnéd, hogy gyorsan töltsenek be az oldalaid, akkor egy `compress image online` vagy `online image compressor` szolgáltatás segítségével tömörítheted a képeket.
+![Linkeles](img/linkeles.jpg) 7. Opcionális: Ha szeretnéd, hogy gyorsan töltsenek be az oldalaid, akkor egy `compress image online` vagy `online image compressor` szolgáltatás segítségével tömörítheted a képeket.
 
 ## 6. Gratuláció! | <a href="https://youtu.be/1Bix44C1EzY?list=PLSSoSC25DDhUFOChkIxvwGmSakaVg8g0D" target="_blank" rel="noreferrer noopener nofollow">Youtube Videó</a> (1 perc)
 
